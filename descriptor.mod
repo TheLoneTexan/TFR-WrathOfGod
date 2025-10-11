@@ -66,8 +66,10 @@ tags={
 	"Map"
 	"National Focuses"
 	"Technologies"
+	"Submod"
 }
-name="The Fire Rises"
+name="The Fire Rises: Wrath of God"
 version="1.0.7"
+dependencies={ "The Fire Rises" }
 supported_version="1.16.*"
 remote_file_id="3350890356"
