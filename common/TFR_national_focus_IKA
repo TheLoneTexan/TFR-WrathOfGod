@@ -49,4 +49,21 @@ focus_tree = {
 			add_ideas = IKA_kill_RRR
 		}
 	}
-}
+	focus = {
+		id = IKA_the_servants_of_babylon
+		icon = GFX_focus_IKA_the_servants_of_babylon
+		relative_position_id = IKA_babylon_has_fallen
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		# Attack and defense bonuses against Southern Federal Command
+		completion_reward = {
+			add_ideas = IKA_kill_NCA
+		}
+	}
