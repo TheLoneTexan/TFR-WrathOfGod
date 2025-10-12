@@ -11,35 +11,59 @@ focus_tree = {
 			tag = IKA
 		}
 	}
-  shared_focus = USA_back_in_business
-  focus = {
-    id = IKA_babylon_has_fallen
-    icon = GFX_focus_IKA_babylon_has_fallen
-    search_filters = {
+	shared_focus = USA_back_in_business
+	focus = {
+		id = IKA_babylon_has_fallen
+		icon = GFX_focus_IKA_babylon_has_fallen
+		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
-    x = 0
-	y = 0
-	cost = 4
-    # Declares on Klan, Rednecks, Carolinas, and Georgia
-    will_lead_to_war_with = LWK
-    will_lead_to_war_with = RRR
-    will_lead_to_war_with = NCA
-    will_lead_to_war_with = STC
-    will_lead_to_war_with = GRA
-    ai_will_do = {
+		x = 0
+		y = 0
+		cost = 4
+		# Declares on Klan, Rednecks, Carolinas, and Georgia
+		will_lead_to_war_with = LWK
+		will_lead_to_war_with = RRR
+		will_lead_to_war_with = NCA
+		will_lead_to_war_with = STC
+		will_lead_to_war_with = GRA
+		ai_will_do = {
 			base = 20
 		}
-  }
-  focus = {
-	id = IKA_the_red_devil
-	icon = GFX_focus_IKA_the_red_devil
-	relative_position_id = IKA_babylon_has_fallen
-	search_filters = {
+	}
+	focus = {
+		id = IKA_the_red_devil
+		icon = GFX_focus_IKA_the_red_devil
+		relative_position_id = IKA_babylon_has_fallen
+		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
-    x = -2
-	y = 1
-	cost = 4
-	# Attack and defense bonuses against Redneck Revolt
-}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		# Attack and defense bonuses against Redneck Revolt
+		completion_reward = {
+			add_ideas = IKA_kill_RRR
+		}
+	}
+	focus = {
+		id = IKA_the_servants_of_babylon
+		icon = GFX_focus_IKA_the_servants_of_babylon
+		relative_position_id = IKA_babylon_has_fallen
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		# Attack and defense bonuses against Southern Federal Command
+		completion_reward = {
+			add_ideas = IKA_kill_NCA
+		}
+	}
