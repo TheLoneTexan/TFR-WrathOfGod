@@ -1,0 +1,34 @@
+ideas = {
+  country = {
+    IKA_shall_we_gather = {
+			picture = generic_christian_values
+		    traits = {
+		        ZZZ_blank_idea_trait
+		    }
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org = 5
+				army_attack_factor = 0.1
+				war_support_factor = 0.15
+			}
+		}
+    IKA_kill_RRR = {
+      picture = generic_christian_values
+        traits = {
+            ZZZ_blank_idea_trait
+          }
+      allowed = {
+        always = yes
+      }
+      removal_cost = -1
+      modifier = {
+        tag = RRR
+        attack_bonus_against = 0.10
+        defense_bonus_against = 0.10
+      }
+    }
+  }
+}
