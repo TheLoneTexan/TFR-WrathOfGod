@@ -1,6 +1,6 @@
 ######################################################
 # Army of God Focus Tree
-# By SoulSurvivor
+# By SoulSurvivor and NosaEpistemo
 ######################################################
 focus_tree = {
 	id = IKA
@@ -29,6 +29,9 @@ focus_tree = {
 		will_lead_to_war_with = GRA
 		ai_will_do = {
 			base = 20
+		}
+		completion_reward = {
+			add_ideas = IKA_leaderless_resistance1
 		}
 	}
 	focus = {
@@ -85,6 +88,159 @@ focus_tree = {
 			custom_effect_tooltip = IKA_welcome_christian_volunteers_tt
 			hidden_effect = {
 				load_oob = IKA_volunteers_oob
+			}
+		}
+	}
+	focus = {
+		id = IKA_walls_of_jericho
+		icon = GFX_focus_IKA_walls_of_jericho
+		relative_position_id = IKA_the_red_devil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_red_devil
+		}
+		# Bonus Attack for Divisions
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance1
+					add_idea = IKA_leaderless_resistance
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_dynamic_modifier = IKA_leaderless_resistance_dynamic }
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = IKA_leaderless_resistance_dynamic
+				}
+				remove_ideas = IKA_leaderless_resistance1
+				set_variable = {
+					var = IKA_military_army_attack_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_guardians_of_the_faith
+		icon = GFX_focus_IKA_guardians_of_the_faith
+		relative_position_id = IKA_babylon_has_fallen
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		# Creates Guardians of the Faith
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = {
+						name = IKA_guardians_of_the_faith_agency
+						icon = GFX_intelligence_agency_logo_IKA
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_done_agency_upgrade = upgrade_domestic_intelligence
+						}
+					}
+					upgrade_intelligence_agency = upgrade_domestic_intelligence
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_valley_of_death
+		icon = GFX_focus_IKA_valley_of_death
+		relative_position_id = IKA_the_servants_of_babylon
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_servants_of_babylon
+		}
+		# Bonus Division HP
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance1
+					add_idea = IKA_leaderless_resistance
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_dynamic_modifier = IKA_leaderless_resistance_dynamic }
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = IKA_leaderless_resistance_dynamic
+				}
+				remove_ideas = IKA_leaderless_resistance1
+				set_variable = {
+					var = IKA_military_army_strength_factor_dynamic_var
+					value = 0.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_we_shall_not_fear
+		icon = GFX_focus_IKA_we_shall_not_fear
+		relative_position_id = IKA_the_servants_of_babylon
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_red_devil
+		}
+		# Bonus Division Organization
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance1
+					add_idea = IKA_leaderless_resistance
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_dynamic_modifier = IKA_leaderless_resistance_dynamic }
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = IKA_leaderless_resistance_dynamic
+				}
+				remove_ideas = IKA_leaderless_resistance1
+				set_variable = {
+					var = IKA_military_army_org_factor_dynamic_var
+					value = 0.05
+				}
 			}
 		}
 	}
