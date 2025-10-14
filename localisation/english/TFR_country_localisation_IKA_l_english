@@ -8,3 +8,22 @@ l_english:
  IKA_the_servants_of_babylon_desc: ""
  IKA_finding_the_faithful: "Finding the Faithful"
  IKA_finding_the_faithful_desc: ""
+ IKA_walls_of_jericho: "Walls of Jericho"
+ IKA_walls_of_jericho_desc: ""
+ IKA_guardians_of_the_faith: "The Guardians of the Faith"
+ IKA_guardians_of_the_faith_desc: ""
+ IKA_valley_of_death: "Through the Valley of Death"
+ IKA_valley_of_death_desc: ""
+ IKA_we_shall_not_fear: "We Shall Not Fear"
+ IKA_we_shall_not_fear_desc: ""
+
+ #National Spirits
+ IKA_leaderless_resistance1: "Leaderless Resistance"
+ IKA_leaderless_resistance_desc: "Since our organization came into existence in 1982, we have fought a war from the shadows against the ungodly and satanic federal government through a series of attacks on its most cherished institutions like the baby-murdering abortion clinics, using an effective model of warfare known as “leaderless resistance” wherein affiliated cells operate under our official backing without a central structure or leader to evade the authorities' grasp and fulfill God's mission.\n\nWith the government's power structures in complete collapse, our faithful cells and holy militias have emerged to take up arms to contribute to the cause in the national struggle. However, the current model is no longer needed as this war is now being fought on the blood-stained battlefields, and we must centralize our command to meet the challenges ahead of us as Christian soldiers."
+ IKA_leaderless_resistance: "Leaderless Resistance"
+ IKA_leaderless_resistance_desc: "Since our organization came into existence in 1982, we have fought a war from the shadows against the ungodly and satanic federal government through a series of attacks on its most cherished institutions like the baby-murdering abortion clinics, using an effective model of warfare known as “leaderless resistance” wherein affiliated cells operate under our official backing without a central structure or leader to evade the authorities' grasp and fulfill God's mission.\n\nWith the government's power structures in complete collapse, our faithful cells and holy militias have emerged to take up arms to contribute to the cause in the national struggle. However, the current model is no longer needed as this war is now being fought on the blood-stained battlefields, and we must centralize our command to meet the challenges ahead of us as Christian soldiers."
+ IKA_leaderless_resistance_dynamic: "Leaderless Resistance"
+ IKA_leaderless_resistance_dynamic_desc: "Since our organization came into existence in 1982, we have fought a war from the shadows against the ungodly and satanic federal government through a series of attacks on its most cherished institutions like the baby-murdering abortion clinics, using an effective model of warfare known as “leaderless resistance” wherein affiliated cells operate under our official backing without a central structure or leader to evade the authorities' grasp and fulfill God's mission.\n\nWith the government's power structures in complete collapse, our faithful cells and holy militias have emerged to take up arms to contribute to the cause in the national struggle. However, the current model is no longer needed as this war is now being fought on the blood-stained battlefields, and we must centralize our command to meet the challenges ahead of us as Christian soldiers."
+
+ #Misc
+ IKA_guardians_of_the_faith_agency: "Guardians of the Faith"
