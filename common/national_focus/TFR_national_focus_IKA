@@ -67,3 +67,25 @@ focus_tree = {
 			add_ideas = IKA_kill_NCA
 		}
 	}
+	focus = {
+		id = IKA_finding_the_faithful
+		icon = GFX_focus_IKA_finding_the_faithful
+		relative_position_id = IKA_the_red_devil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_red_devil
+		}
+		# Spawns 3 basic militia divisions in capital state
+		completion_reward = {
+			custom_effect_tooltip = IKA_welcome_christian_volunteers_tt
+			hidden_effect = {
+				load_oob = IKA_volunteers_oob
+			}
+		}
+	}
+}
