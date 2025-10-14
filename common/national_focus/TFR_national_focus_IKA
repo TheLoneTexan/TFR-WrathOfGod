@@ -217,7 +217,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = {
-			focus = IKA_the_red_devil
+			focus = IKA_the_servants_of_babylon
 		}
 		# Bonus Division Organization
 		completion_reward = {
