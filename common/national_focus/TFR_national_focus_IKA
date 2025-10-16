@@ -244,4 +244,78 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = IKA_chariots_of_iron
+		icon = GFX_focus_IKA_chariots_of_iron
+		relative_position_id = IKA_guardians_of_the_faith
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_guardians_of_the_faith
+		}
+		# Spawns 2 armor divisions in capital and gives land doctrine cost reduction
+		completion_reward = {
+			custom_effect_tooltip = IKA_chariots_of_iron_tt
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+			hidden_effect = {
+				924 = {
+					create_unit = {
+						division = "name = \"'Gideon' Armored Division\" division_template = \"Armor Division\" start_experience_factor = 0.2"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"'Samson' Armored Division\" division_template = \"Armor Division\" start_experience_factor = 0.2"
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_show_them_his_truth
+		icon = GFX_focus_IKA_show_them_his_truth
+		relative_position_id = IKA_walls_of_jericho
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_walls_of_jericho
+		}
+		# Increases recruitable population factor
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance1
+					add_idea = IKA_leaderless_resistance
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { has_dynamic_modifier = IKA_leaderless_resistance_dynamic }
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = IKA_leaderless_resistance_dynamic
+				}
+				remove_ideas = IKA_leaderless_resistance1
+				set_variable = {
+					var = IKA_military_conscription_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
 }

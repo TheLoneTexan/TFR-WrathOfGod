@@ -21,7 +21,7 @@ ideas = {
 				ZZZ_blank_idea_trait
 			}
 			allowed = {
-			always = yes
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
