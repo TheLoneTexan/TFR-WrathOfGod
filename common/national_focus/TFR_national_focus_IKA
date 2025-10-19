@@ -318,4 +318,23 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = IKA_servants_of_molech
+		icon = GFX_focus_IKA_servants_of_molech
+		relative_position_id = IKA_valley_of_death
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_valley_of_death
+		}
+		# Increases stability and reduces consumer goods factor
+		completion_reward = {
+			add_stability = 0.10
+			add_ideas = IKA_abortionists_punished
+		}
+	}
 }
