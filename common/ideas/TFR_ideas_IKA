@@ -127,7 +127,7 @@ ideas = {
 				defense_bonus_against = 0.10
 			}
 		}
-		IKA_greater_evil_idea = {
+		IKA_rejecting_satan_idea = {
 			picture = generic_christian_values
 			traits = {
 				ZZZ_blank_idea_trait
