@@ -252,5 +252,19 @@ ideas = {
 				defense_bonus_against = 0.10
 			}
 		}
+		IKA_baptism_by_fire_idea = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_experience_gain_mult = 0.10
+				leader_experience_gain = 0.10
+			}
+		}
 	}
 }
