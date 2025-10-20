@@ -226,6 +226,31 @@ ideas = {
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
+			targeted_modifier = {
+				tag = BNF
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = NYP
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ATF
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = VER
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = DUG
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
 		}
 	}
 }
