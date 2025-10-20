@@ -82,5 +82,50 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		IKA_greater_evil_idea = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = RRR
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = APA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = RCA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ATP
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = TRG
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = GMA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = BRN
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
 	}
 }

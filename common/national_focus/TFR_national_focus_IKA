@@ -337,4 +337,25 @@ focus_tree = {
 			add_ideas = IKA_abortionists_punished
 		}
 	}
+	focus = {
+		id = IKA_the_greater_evil
+		icon = GFX_focus_IKA_the_greater_evil
+		relative_position_id = IKA_show_them_his_truth
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus_IKA_show_them_his_truth
+		}
+		# Increases buffs against Redneck Revolt and applies smaller bonuses against all socialist 2ACW factions
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IKA_kill_RRR
+				add_idea = IKA_greater_evil_idea
+			}
+		}
+	}
 }
