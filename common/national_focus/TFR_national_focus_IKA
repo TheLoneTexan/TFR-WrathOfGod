@@ -424,4 +424,26 @@ focus_tree = {
 			add_political_power = 50
 		}
 	}
+	focus = {
+		id = IKA_holy_minutemen
+		icon = GFX_focus_IKA_holy_minutemen
+		relative_position_id = IKA_equal_under_god_not_man
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_baptism_by_fire
+			focus = IKA_equal_under_god_not_man
+		}
+		# Spawns 3 militia divisions in capital
+		completion_reward = {
+			custom_effect_tooltip = IKA_holy_minutemen_tt
+			hidden_effect = {
+				load_oob = IKA_holy_minutemen_oob
+			}
+		}
+	}
 }
