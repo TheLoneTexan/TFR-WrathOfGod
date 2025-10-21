@@ -405,4 +405,23 @@ focus_tree = {
 			add_idea = IKA_baptism_by_fire_idea
 		}
 	}
+	focus = {
+		id = IKA_equal_under_god_not_man
+		icon = GFX_focus_IKA_equal_under_god_not_man
+		relative_position_id = IKA_the_greater_evil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_greater_evil
+		}
+		# Gives war support and political power
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 50
+		}
+	}
 }
