@@ -33,6 +33,14 @@
 		IKA_shall_we_gather
 	}
 
+	add_dynamic_modifier = {
+		modifier = IKA_leaderless_resistance_dynamic
+	}
+
+	add_dynamic_modifier = {
+		modifier = IKA_backwoods_economy_dynamic
+	}
+
 	set_technology = {
 		## Infantry ##
 		
