@@ -45,28 +45,64 @@ ideas = {
 				defense_bonus_against = 0.10
 			}
 		}
-		IKA_leaderless_resistance1 = {
-			picture = generic_christian_values
-			traits = {
-				ZZZ_blank_idea_trait
-			}
+		IKA_leaderless_resistance_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
 			allowed = {
-				always = yes
+				original_tag = IKA
 			}
-			removal_cost = -1
 			modifier = {
 			}
 		}
-		IKA_leaderless_resistance = {
-			picture = generic_christian_values
-			traits = {
-				ZZZ_blank_idea_trait
-			}
+		IKA_walls_of_jericho_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
 			allowed = {
 				always = yes
 			}
-			removal_cost = -1
 			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+		IKA_valley_of_death_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_strength_factor = 0.10
+			}
+		}
+		IKA_we_shall_not_fear_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+		IKA_show_them_his_truth_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		IKA_baptism_by_fire_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_army_unit_factor = 0.10
+				experience_gain_factor = 0.10
 			}
 		}
 		IKA_abortionists_punished = {
@@ -123,6 +159,131 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = BRN
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+		}
+		IKA_rejecting_satan_idea = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = NCA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = STC
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = GRA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ALA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = TEX
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = NCY
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = NMX
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ARZ
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = CAL
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ORE
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = WAS
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = MSS
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = FLA
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = LOU
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = MIM
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = NEG
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = USC
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = USB
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = BNF
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = NYP
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = ATF
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = VER
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = DUG
 				attack_bonus_against = 0.10
 				defense_bonus_against = 0.10
 			}
