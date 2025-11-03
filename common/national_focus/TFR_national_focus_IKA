@@ -334,7 +334,7 @@ focus_tree = {
 		# Increases stability and reduces consumer goods factor
 		completion_reward = {
 			add_stability = 0.10
-			add_ideas = IKA_abortionists_punished
+			add_idea = IKA_abortionists_punished
 		}
 	}
 	focus = {
@@ -348,13 +348,101 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = {
-			focus_IKA_show_them_his_truth
+			focus = IKA_show_them_his_truth
+		}
+		mutually_exclusive = {
+			focus = IKA_rejecting_satan
 		}
 		# Increases buffs against Redneck Revolt and applies smaller bonuses against all socialist 2ACW factions
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = IKA_kill_RRR
 				add_idea = IKA_greater_evil_idea
+			}
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = IKA_rejecting_satan
+		icon = GFX_focus_IKA_rejecting_satan
+		relative_position_id = IKA_servants_of_molech
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_servants_of_molech
+		}
+		mutually_exclusive = {
+			focus = IKA_the_greater_evil
+		}
+		# Increases buffs against SFC and applies smaller bonuses against Trump, Biden, state gov'ts, and other feds
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IKA_kill_NCA
+				add_idea = IKA_rejecting_satan_idea
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = IKA_baptism_by_fire
+		icon = GFX_focus_IKA_baptism_by_fire
+		relative_position_id = IKA_the_greater_evil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_greater_evil
+		}
+		# Increases army and leader experience gain
+		completion_reward = {
+			add_idea = IKA_baptism_by_fire_idea
+		}
+	}
+	focus = {
+		id = IKA_equal_under_god_not_man
+		icon = GFX_focus_IKA_equal_under_god_not_man
+		relative_position_id = IKA_the_greater_evil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_greater_evil
+		}
+		# Gives war support and political power
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IKA_holy_minutemen
+		icon = GFX_focus_IKA_holy_minutemen
+		relative_position_id = IKA_equal_under_god_not_man
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_baptism_by_fire
+			focus = IKA_equal_under_god_not_man
+		}
+		# Spawns 3 militia divisions in capital
+		completion_reward = {
+			custom_effect_tooltip = IKA_holy_minutemen_tt
+			hidden_effect = {
+				load_oob = IKA_holy_minutemen_oob
 			}
 		}
 	}
