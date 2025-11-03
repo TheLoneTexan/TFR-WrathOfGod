@@ -45,28 +45,64 @@ ideas = {
 				defense_bonus_against = 0.10
 			}
 		}
-		IKA_leaderless_resistance1 = {
-			picture = generic_christian_values
-			traits = {
-				ZZZ_blank_idea_trait
-			}
+		IKA_leaderless_resistance_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
 			allowed = {
-				always = yes
+				original_tag = IKA
 			}
-			removal_cost = -1
 			modifier = {
 			}
 		}
-		IKA_leaderless_resistance = {
-			picture = generic_christian_values
-			traits = {
-				ZZZ_blank_idea_trait
-			}
+		IKA_walls_of_jericho_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
 			allowed = {
 				always = yes
 			}
-			removal_cost = -1
 			modifier = {
+				army_attack_factor = 0.05
+			}
+		}
+		IKA_valley_of_death_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_strength_factor = 0.10
+			}
+		}
+		IKA_we_shall_not_fear_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+		IKA_show_them_his_truth_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.05
+			}
+		}
+		IKA_baptism_by_fire_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_leaderless_resistance_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_army_unit_factor = 0.10
+				experience_gain_factor = 0.10
 			}
 		}
 		IKA_abortionists_punished = {
