@@ -311,7 +311,7 @@ focus_tree = {
 		# Increases stability and reduces consumer goods factor
 		completion_reward = {
 			add_stability = 0.10
-			add_ideas = IKA_abortionists_punished
+			add_idea = IKA_abortionists_punished
 		}
 	}
 	focus = {
@@ -401,6 +401,7 @@ focus_tree = {
 					value = 0.10
 				}
 			}
+			add_idea = IKA_baptism_by_fire_idea
 		}
 	}
 	focus = {
