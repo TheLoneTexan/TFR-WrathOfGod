@@ -523,4 +523,29 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = IKA_ban_prenatal_infanticide
+		icon = GFX_focus_IKA_ban_prenatal_infanticide
+		relative_position_id = IKA_chariots_of_iron
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			OR = {
+				focus = IKA_the_greater_evil
+				focus = IKA_rejecting_satan
+			}
+		}
+		# 
+		completion_reward = {
+			add_stability = 0.10
+			swap_ideas = {
+				remove_idea = IKA_abortionists_punished
+				add_idea = IKA_abortion_banned
+			}
+		}
+	}
 }
