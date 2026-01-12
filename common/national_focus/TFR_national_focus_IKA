@@ -539,13 +539,31 @@ focus_tree = {
 				focus = IKA_rejecting_satan
 			}
 		}
-		# 
+		# Replaces Abortionists Punished nat. spirit with Abortion Banned, essentially upgraded version
 		completion_reward = {
 			add_stability = 0.10
 			swap_ideas = {
 				remove_idea = IKA_abortionists_punished
 				add_idea = IKA_abortion_banned
 			}
+		}
+	}
+	focus = {
+		id = IKA_new_dawn_ministries
+		icon = GFX_focus_IKA_new_dawn_ministries
+		relative_position_id = IKA_ban_prenatal_infanticide
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_ban_prenatal_infanticide
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
 		}
 	}
 }
