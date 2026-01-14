@@ -1,0 +1,78 @@
+add_namespace = IKA
+
+country_event = {
+    id = IKA.1
+    title = IKA.1.t
+    desc = IKA.1.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.1.a
+    }
+}
+
+country_event = {
+    id = IKA.2
+    title = IKA.2.t
+    desc = IKA.2.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.2.a
+    }
+}
+
+country_event = {
+    id = IKA.3
+    title = IKA.3.t
+    desc = IKA.3.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.3.a
+    }
+}
+
+country_event = {
+    id = IKA.4
+    title = IKA.4.t
+    desc = IKA.4.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.4.a
+    }
+}
+
+country_event = {
+    id = IKA.5
+    title = IKA.5.t
+    desc = IKA.5.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.5.a
+    }
+}
+
+country_event = {
+    id = IKA.6
+    title = IKA.6.t
+    desc = IKA.6.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.6.a
+    }
+}
+
+country_event = {
+    id = IKA.7
+    title = IKA.7.t
+    desc = IKA.7.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.7.a
+    }
+}
