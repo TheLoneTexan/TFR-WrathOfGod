@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
  #Initial Focus Tree
  IKA_babylon_has_fallen: "Babylon Has Fallen"
  IKA_babylon_has_fallen_desc: ""
@@ -81,3 +81,6 @@ l_english:
  #Misc
  IKA_guardians_of_the_faith_agency: "Guardians of the Faith"
  IKA_the_seventh_seal_trigger_tt: "The Army of God has United the Southeast!"
+ IKA_holy_minutemen_tt: "The Holy Minutemen have arrived!"
+ IKA_chariots_of_iron_tt: "The Chariots of Iron have arrived!"
+ IKA_welcome_christian_volunteers_tt: "The Faithful have arrived!"

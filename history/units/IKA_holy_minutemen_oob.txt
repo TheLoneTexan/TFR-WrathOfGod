@@ -15,23 +15,27 @@ division_template = {
     engineer = { x = 0 y = 0 }
 	}
 }
+
 units = {
 	division = {
 		name = "1st Minutemen Brigade" 
-		location = 924
-		division_template = "Holy Volunteers"
-		start_experience_factor = 0.3
+		location = 13582
+		division_template = "Holy Minutemen"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
 	}
   division = {
 		name = "2nd Minutemen Brigade" 
-		location = 924
-		division_template = "Holy Volunteers"
-		start_experience_factor = 0.3
+		location = 13582
+		division_template = "Holy Minutemen"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
   }
   division = {
 		name = "3rd Minutemen Brigade" 
-		location = 924
-		division_template = "Holy Volunteers"
-		start_experience_factor = 0.3
+		location = 13582
+		division_template = "Holy Minutemen"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
   }
 }
