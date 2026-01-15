@@ -1,0 +1,624 @@
+######################################################
+# Army of God Focus Tree
+# By SoulSurvivor and NosaEpistemo
+######################################################
+focus_tree = {
+	id = IKA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IKA
+		}
+	}
+	shared_focus = USA_back_in_business
+	focus = {
+		id = IKA_babylon_has_fallen
+		icon = GFX_focus_IKA_babylon_has_fallen
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 0
+		cost = 4
+		# Declares on Klan, Rednecks, Carolinas, and Georgia
+		will_lead_to_war_with = LWK
+		will_lead_to_war_with = RRR
+		will_lead_to_war_with = NCA
+		will_lead_to_war_with = STC
+		will_lead_to_war_with = GRA
+		ai_will_do = {
+			base = 20
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.1 
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = USA_american_civil_war_global
+						}
+					}
+					USC = {
+						country_event = {
+							id = usa.104
+						}
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_the_red_devil
+		icon = GFX_focus_IKA_the_red_devil
+		relative_position_id = IKA_babylon_has_fallen
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		# Attack and defense bonuses against Redneck Revolt
+		completion_reward = {
+			add_ideas = IKA_kill_RRR
+		}
+	}
+	focus = {
+		id = IKA_the_servants_of_babylon
+		icon = GFX_focus_IKA_the_servants_of_babylon
+		relative_position_id = IKA_babylon_has_fallen
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		# Attack and defense bonuses against Southern Federal Command
+		completion_reward = {
+			add_ideas = IKA_kill_NCA
+		}
+	}
+	focus = {
+		id = IKA_finding_the_faithful
+		icon = GFX_focus_IKA_finding_the_faithful
+		relative_position_id = IKA_the_red_devil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_red_devil
+		}
+		# Spawns 3 basic militia divisions in capital state
+		completion_reward = {
+			custom_effect_tooltip = IKA_welcome_christian_volunteers_tt
+			hidden_effect = {
+				load_oob = IKA_volunteers_oob
+			}
+		}
+	}
+	focus = {
+		id = IKA_walls_of_jericho
+		icon = GFX_focus_IKA_walls_of_jericho
+		relative_position_id = IKA_the_red_devil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_red_devil
+		}
+		# Bonus Attack for Divisions
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance_dummy_idea
+					add_idea = IKA_walls_of_jericho_idea
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					var = IKA_military_army_attack_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_guardians_of_the_faith
+		icon = GFX_focus_IKA_guardians_of_the_faith
+		relative_position_id = IKA_babylon_has_fallen
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		# Creates Guardians of the Faith
+		completion_reward = {
+			country_event = {
+				id = IKA.2
+			}
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				if = {
+					limit = {
+						has_intelligence_agency = no
+					}
+					create_intelligence_agency = {
+						name = IKA_guardians_of_the_faith_agency
+						icon = GFX_intelligence_agency_logo_IKA
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_done_agency_upgrade = upgrade_domestic_intelligence
+						}
+					}
+					upgrade_intelligence_agency = upgrade_domestic_intelligence
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_open_the_conversion_camps
+		icon = GFX_focus_IKA_open_the_conversion_camps
+		relative_position_id = IKA_guardians_of_the_faith
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_babylon_has_fallen
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.3
+			}
+		}
+	}
+	focus = {
+		id = IKA_valley_of_death
+		icon = GFX_focus_IKA_valley_of_death
+		relative_position_id = IKA_the_servants_of_babylon
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_servants_of_babylon
+		}
+		# Bonus Division HP
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance_dummy_idea
+					add_idea = IKA_valley_of_death_idea
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					var = IKA_military_army_strength_factor_dynamic_var
+					value = 0.10
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_we_shall_not_fear
+		icon = GFX_focus_IKA_we_shall_not_fear
+		relative_position_id = IKA_the_servants_of_babylon
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_servants_of_babylon
+		}
+		# Bonus Division Organization
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance_dummy_idea
+					add_idea = IKA_we_shall_not_fear_idea
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					var = IKA_military_army_org_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_chariots_of_iron
+		icon = GFX_focus_IKA_chariots_of_iron
+		relative_position_id = IKA_open_the_conversion_camps
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_guardians_of_the_faith
+		}
+		# Spawns 2 armor divisions in capital and gives land doctrine cost reduction
+		completion_reward = {
+			custom_effect_tooltip = IKA_chariots_of_iron_tt
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.75
+				uses = 1
+				category = land_doctrine
+			}
+			hidden_effect = {
+				load_oob = IKA_chariots_of_iron_oob
+			}
+		}
+	}
+	focus = {
+		id = IKA_show_them_his_truth
+		icon = GFX_focus_IKA_show_them_his_truth
+		relative_position_id = IKA_walls_of_jericho
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_walls_of_jericho
+		}
+		# Increases recruitable population factor
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance_dummy_idea
+					add_idea = IKA_show_them_his_truth_idea
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					var = IKA_military_conscription_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_servants_of_molech
+		icon = GFX_focus_IKA_servants_of_molech
+		relative_position_id = IKA_valley_of_death
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_valley_of_death
+		}
+		# Increases stability and reduces consumer goods factor
+		completion_reward = {
+			add_stability = 0.10
+			add_idea = IKA_abortionists_punished
+		}
+	}
+	focus = {
+		id = IKA_the_greater_evil
+		icon = GFX_focus_IKA_the_greater_evil
+		relative_position_id = IKA_show_them_his_truth
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_show_them_his_truth
+		}
+		prerequisite = {
+			focus = IKA_chariots_of_iron
+		}
+		mutually_exclusive = {
+			focus = IKA_rejecting_satan
+		}
+		# Increases buffs against Redneck Revolt and applies smaller bonuses against all socialist 2ACW factions
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IKA_kill_RRR
+				add_idea = IKA_greater_evil_idea
+			}
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = IKA_rejecting_satan
+		icon = GFX_focus_IKA_rejecting_satan
+		relative_position_id = IKA_servants_of_molech
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_servants_of_molech
+		}
+		prerequisite = {
+			focus = IKA_chariots_of_iron
+		}
+		mutually_exclusive = {
+			focus = IKA_the_greater_evil
+		}
+		# Increases buffs against SFC and applies smaller bonuses against Trump, Biden, state gov'ts, and other feds
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IKA_kill_NCA
+				add_idea = IKA_rejecting_satan_idea
+			}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = IKA_baptism_by_fire
+		icon = GFX_focus_IKA_baptism_by_fire
+		relative_position_id = IKA_the_greater_evil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -3
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_greater_evil
+		}
+		# Increases army and leader experience gain
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance_dummy_idea
+					add_idea = IKA_baptism_by_fire_idea
+				}
+			}
+			hidden_effect = {
+				set_variable = {
+					var = IKA_military_experience_gain_army_unit_factor_dynamic_var
+					value = 0.10
+				}
+				set_variable = {
+					var = IKA_military_experience_gain_factor_dynamic_var
+					value = 0.10
+				}
+			}
+			add_idea = IKA_baptism_by_fire_idea
+		}
+	}
+	focus = {
+		id = IKA_equal_under_god_not_man
+		icon = GFX_focus_IKA_equal_under_god_not_man
+		relative_position_id = IKA_the_greater_evil
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_greater_evil
+		}
+		# Gives war support and political power
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IKA_holy_minutemen
+		icon = GFX_focus_IKA_holy_minutemen
+		relative_position_id = IKA_equal_under_god_not_man
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_baptism_by_fire
+		}
+		prerequisite = {
+			focus = IKA_equal_under_god_not_man
+		}
+		# Spawns 3 militia divisions in capital
+		completion_reward = {
+			custom_effect_tooltip = IKA_holy_minutemen_tt
+			hidden_effect = {
+				load_oob = IKA_holy_minutemen_oob
+			}
+		}
+	}
+	focus = {
+		id = IKA_servants_of_mammon
+		icon = GFX_focus_IKA_servants_of_mammon
+		relative_position_id = IKA_rejecting_satan
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_rejecting_satan
+		}
+		# gives money by seizing wealth of wealthy sinners  
+		completion_reward = {
+			set_temp_variable = {
+				income_var_temp = 10
+			}
+			add_income_with_inflation = yes
+		}
+	}
+	focus = {
+		id = IKA_god_hate_gays
+		icon = GFX_focus_IKA_god_hate_gays
+		relative_position_id = IKA_rejecting_satan
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 3
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_rejecting_satan
+		}
+		# adds political power
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IKA_cleansing_of_atlanta
+		icon = GFX_focus_IKA_cleansing_of_atlanta
+		relative_position_id = IKA_servants_of_mammon
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		available = {
+			has_full_control_of_state = 1017
+		}
+		prerequisite = {
+			focus = IKA_servants_of_mammon
+		}
+		prerequisite = {
+			focus = IKA_god_hate_gays
+		}
+		# adds stability, civillian and military factories
+		completion_reward = {
+			country_event = {
+				id = IKA.6
+			}
+			add_stability = 0.05
+			1017 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_ban_prenatal_infanticide
+		icon = GFX_focus_IKA_ban_prenatal_infanticide
+		relative_position_id = IKA_chariots_of_iron
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_greater_evil
+			focus = IKA_rejecting_satan
+		}
+		# Replaces Abortionists Punished nat. spirit with Abortion Banned, essentially upgraded version
+		completion_reward = {
+			country_event = {
+				id = IKA.4
+			}
+			add_stability = 0.10
+			swap_ideas = {
+				remove_idea = IKA_abortionists_punished
+				add_idea = IKA_abortion_banned
+			}
+		}
+	}
+	focus = {
+		id = IKA_new_dawn_ministries
+		icon = GFX_focus_IKA_new_dawn_ministries
+		relative_position_id = IKA_ban_prenatal_infanticide
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_ban_prenatal_infanticide
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = IKA_the_seventh_seal
+		icon = GFX_focus_KA_the_seventh_seal
+		relative_position_id = IKA_new_dawn_ministries
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_new_dawn_ministries
+		}
+		prerequisite = {
+			focus = IKA_holy_minutemen
+			focus = IKA_cleansing_of_atlanta
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = IKA_the_seventh_seal_trigger_tt
+				NOT = {
+					country_exists = GRA
+					country_exists = LWK
+					country_exists = RRR
+					country_exists = STC
+					country_exists = NCA
+				}
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.7
+			}
+		}
+	}
+}
