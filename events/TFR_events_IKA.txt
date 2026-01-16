@@ -76,3 +76,47 @@ country_event = {
         name = IKA.7.a
     }
 }
+
+country_event = {
+    id = IKA.8
+    title = IKA.8.t
+    desc = IKA.8.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.8.a
+    }
+}
+
+country_event = {
+    id = IKA.9
+    title = IKA.9.t
+    desc = IKA.9.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.9.a
+    }
+}
+
+country_event = {
+    id = IKA.10
+    title = IKA.10.t
+    desc = IKA.10.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.9.a
+    }
+}
+
+country_event = {
+    id = IKA.11
+    title = IKA.11.t
+    desc = IKA.11.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.11.a
+    }
+}

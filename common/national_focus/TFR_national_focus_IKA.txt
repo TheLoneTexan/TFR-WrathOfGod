@@ -588,7 +588,7 @@ focus_tree = {
 	}
 	focus = {
 		id = IKA_the_seventh_seal
-		icon = GFX_focus_KA_the_seventh_seal
+		icon = GFX_focus_IKA_the_seventh_seal
 		relative_position_id = IKA_new_dawn_ministries
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
@@ -618,6 +618,31 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = IKA.7
+			}
+		}
+	}
+	focus = {
+		id = IKA_justice_for_the_unborn
+		icon = GFX_focus_IKA_justice_for_the_unborn
+		relative_position_id = IKA_the_seventh_seal
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_seventh_seal
+		}
+		visible = {
+			has_completed_focus = IKA_the_seventh_seal
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.8
+				id = IKA.9
+				id = IKA.10
+				id = IKA.11
 			}
 		}
 	}
