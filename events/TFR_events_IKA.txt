@@ -120,3 +120,26 @@ country_event = {
         name = IKA.11.a
     }
 }
+country_event = {
+    id = IKA.12
+    title = IKA.12.t
+    desc = IKA.12.d
+    
+    is_triggered_only = yes
+    option = {
+        name = IKA.12.a
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+        }
+    }
+    option = {
+        name = IKA.12.b
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = right
+        }
+    }
+}
