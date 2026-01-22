@@ -1,0 +1,5 @@
+balance_of_power = {
+  id = IKA_balance_of_power
+  left_side = IKA_nationalist
+  right_side = IKA_fundamentalist
+}
