@@ -143,3 +143,17 @@ country_event = {
         }
     }
 }
+country_event = {
+    id = IKA.13
+    title = IKA.13.t
+    desc = IKA.13.d
+    
+    is_triggered_only = yes
+    option = {
+        name = IKA.13.a
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+        }
+        
