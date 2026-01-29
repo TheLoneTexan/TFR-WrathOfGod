@@ -156,4 +156,14 @@ country_event = {
             value = 0.10
             side = left
         }
-        
+        load_oob = IKA_brighams_brigade_oob
+    }
+    option = {
+        name = IKA.13.b
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = right
+        }
+    }
+}
