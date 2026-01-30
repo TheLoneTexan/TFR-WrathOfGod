@@ -167,3 +167,50 @@ country_event = {
         }
     }
 }
+country_event = {
+    id = IKA.14
+    title = IKA.14.t
+    desc = IKA.14.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.14.a
+        if = {
+            limit = {
+                balance_of_power = {
+                    id = IKA_balance_of_power
+                    value > 0
+                }
+            }
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = left
+            }
+        }
+        else = {
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = right
+            }
+        }
+    }
+    option = {
+        name = IKA.14.b
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+        }
+    }
+    option = {
+        name = IKA.14.c
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+        }
+    }
+}
+            
