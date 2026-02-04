@@ -143,6 +143,7 @@ country_event = {
         }
     }
 }
+
 country_event = {
     id = IKA.13
     title = IKA.13.t
@@ -167,6 +168,7 @@ country_event = {
         }
     }
 }
+
 country_event = {
     id = IKA.14
     title = IKA.14.t
@@ -209,8 +211,187 @@ country_event = {
         add_balance_of_power = {
             id = IKA_balance_of_power
             value = 0.10
-            side = left
+            side = right
         }
     }
 }
-            
+
+country_event = {
+    id = IKA.15
+    title = IKA.15.t
+    desc = IKA.15.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.15.a
+        if = {
+            limit = {
+                balance_of_power = {
+                    id = IKA_balance_of_power
+                    value > 0
+                }
+            }
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = left
+            }
+        }
+        else = {
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = right
+            }
+        }
+    }
+    option = {
+        name = IKA.15.b
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+        }
+    }
+    option = {
+        name = IKA.15.c
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = right
+        }
+    }
+}
+
+country_event = {
+    id = IKA.16
+    title = IKA.16.t
+    desc = IKA.16.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.16.a
+        if = {
+            limit = {
+                balance_of_power = {
+                    id = IKA_balance_of_power
+                    value > 0
+                }
+            }
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = left
+            }
+        }
+        else = {
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = right
+            }
+        }
+    }
+    option = {
+        name = IKA.16.b
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+        }
+    }
+    option = {
+        name = IKA.16.c
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = right
+        }
+    }
+}
+
+country_event = {
+    id = IKA.17
+    title = IKA.17.t
+    desc = IKA.17.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.17.a
+        if = {
+            limit = {
+                balance_of_power = {
+                    id = IKA_balance_of_power
+                    value > 0
+                }
+            }
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = left
+            }
+        }
+        else = {
+            add_balance_of_power = {
+                id = IKA_balance_of_power
+                value = 0.10
+                side = right
+            }
+        }
+    }
+    option = {
+        name = IKA.17.b
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+        }
+    }
+    option = {
+        name = IKA.17.c
+        add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = right
+        }
+    }
+}
+
+country_event = {
+    id = IKA.18
+    title = IKA.18.t
+    desc = IKA.18.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.18.a
+        if = {
+            limit = {
+                balance_of_power = {
+                    id = IKA_balance_of_power
+                    value < -0.25
+                }
+            }
+            country_event = {
+                id = IKA.19
+            }
+        }
+        else_if = {
+            limit = {
+                balance_of_power = {
+                    id = IKA_balance_of_power
+                    value > 0.25
+                }
+            }
+            country_event = {
+                id = IKA.20
+            }
+        }
+        else = {
+            country_event = {
+                id = IKA.21
+            }
+        }
+    }
+}
+
