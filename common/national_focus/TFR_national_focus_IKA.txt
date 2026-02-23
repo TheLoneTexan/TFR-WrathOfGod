@@ -356,6 +356,11 @@ focus_tree = {
 				add_idea = IKA_greater_evil_idea
 			}
 			add_war_support = 0.10
+			add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = left
+			}
 		}
 	}
 	focus = {
@@ -384,6 +389,11 @@ focus_tree = {
 				add_idea = IKA_rejecting_satan_idea
 			}
 			add_stability = 0.05
+			add_balance_of_power = {
+            id = IKA_balance_of_power
+            value = 0.10
+            side = right
+        	}
 		}
 	}
 	focus = {
