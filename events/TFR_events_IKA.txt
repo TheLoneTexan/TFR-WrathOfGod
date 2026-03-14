@@ -369,7 +369,7 @@ country_event = {
             limit = {
                 balance_of_power = {
                     id = IKA_balance_of_power
-                    value < -0.25
+                    value < -0.33
                 }
             }
             country_event = {
@@ -380,7 +380,7 @@ country_event = {
             limit = {
                 balance_of_power = {
                     id = IKA_balance_of_power
-                    value > 0.25
+                    value > 0.33
                 }
             }
             country_event = {
@@ -394,4 +394,67 @@ country_event = {
         }
     }
 }
+
+country_event = {
+    id = IKA.19
+    title = IKA.19.t
+    desc = IKA.19.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.19.a
+            set_politics = {
+                ruling_party = authoritarian_democrat
+                last_election = "2020.1.1"
+                election_frequency = 48
+                elections_allowed = no
+            }
+        }
+    }
+
+
+country_event = {
+    id = IKA.20
+    title = IKA.20.t
+    desc = IKA.20.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.20.a
+            add_country_leader_role = {
+                character = IKA_steven_anderson_char
+                promote_leader = yes
+                country_leader = {
+                    ideology = ifb_theocracy
+                }
+            }
+            set_party_name = {
+                ideology = nationalist
+                name = IKA_redeemer_party_short
+                long_name = IKA_redeemer_party
+            }
+            retire_country_leader = {
+                character = IKA_donald_spitz_char
+            }
+        }
+    }
+
+
+country_event = {
+    id = IKA.21
+    title = IKA.21.t
+    desc = IKA.21.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.21.a
+                add_country_leader_role = {
+                 character = IKA_donald_spitz_char
+                promote_leader = yes
+                 country_leader = {
+                     ideology = theocracy
+                }
+            }
+        }
+    }
 

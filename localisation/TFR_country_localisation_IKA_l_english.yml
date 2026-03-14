@@ -1,7 +1,7 @@
 ﻿l_english:
  #Initial Focus Tree
  IKA_babylon_has_fallen: "Babylon Has Fallen"
- IKA_babylon_has_fallen_desc: ""
+ IKA_babylon_has_fallen_desc: "America, the new Babylon, has finally fallen. As the country is engulfed by it’s second civil war, a golden opportunity has arisen for us to truly bring about the return of God and Jesus Christ to this forsaken land. For decades, true-born Christians have been oppressed by the tyrannical government in Washington, without genuine representation and betrayed by corrupt bureaucrats on both sides. Only the Army of God saw through this facade and served as the protectors of both Christians and the unborn. With the tyrannical government in complete collapse, now is the time to create a truly holy society from the ruins of the old."
  IKA_the_red_devil: "The Red Devil"
  IKA_the_red_devil_desc: ""
  IKA_the_servants_of_babylon: "The Servants of Babylon"
@@ -84,3 +84,41 @@
  IKA_holy_minutemen_tt: "The Holy Minutemen have arrived!"
  IKA_chariots_of_iron_tt: "The Chariots of Iron have arrived!"
  IKA_welcome_christian_volunteers_tt: "The Faithful have arrived!"
+
+#Parties
+ IKA_totalitarian_socialist_long: "§ROUTLAWED§!"
+ IKA_totalitarian_socialist_short: "§ROUTLAWED§!"
+ IKA_communist_long: "§ROUTLAWED§!"
+ IKA_communist_short: "§ROUTLAWED§!" 
+ IKA_libertarian_socialist_long: "Godless Communists"
+ IKA_libertarian_socialist_short: "Godless Communists"
+ IKA_social_democrat_long: "Sodomites"
+ IKA_social_democrat_short: "Sodomites"
+ IKA_social_liberal_long: "Sinners"
+ IKA_social_liberal_short: "Sinners"
+ IKA_market_liberal_long: "Mammonites"
+ IKA_market_liberal_short: "Mammonites"
+ IKA_conservative_long: "Constitution Party/Republican Party"
+ IKA_conservative_short: "GOP"
+ IKA_authoritarian_democrat_long: "Army of God (Pilgrims)"
+ IKA_authoritarian_democrat_short: "AOG (P)"
+ IKA_nationalist_long: "Army of God (New Apostles)"
+ IKA_nationalist_short: "AOG (NA)"
+ IKA_fascist_long: "Secular Fascists"
+ IKA_fascist_short: "Secular Fascists"
+ IKA_national_socialist_long: "Godless Nazis"
+ IKA_national_socialist_short: "Godless Nazis"
+ IKA_outlawed_long: "§ROUTLAWED§!"
+ IKA_outlawed_short: "§ROUTLAWED§!"
+
+ IKA_redeemer_party: "Army of God (Redeemers)" 
+ IKA_redeemer_party_short: "AOG (R)"
+
+#BOP
+ IKA_power_balance: "The Fate of America"
+ IKA_nationalist_side: "American Rebirth"
+ IKA_fundamentalist_side: "Babylon's Destruction"
+
+ IKA_balance_range: "Balanced"
+ IKA_nationalist_range: "Pilgrims Dominant!"
+ IKA_fundamentalist_range: "Redeemers Dominant!"

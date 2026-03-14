@@ -1,0 +1,61 @@
+characters = {
+	IKA_donald_spitz_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/IKA/TFR_IKA_donald_spitz.png"
+				}
+				army = {
+					large = "gfx/Leaders/IKA/TFR_IKA_donald_spitz_gen.png"
+				}
+			}
+			country_leader = {
+				ideology = theocracy
+			}
+			field_marshal = {
+				traits = {
+					infantry_officer
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+	IKA_matt_shea_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/IKA/TFR_IKA_matt_shea.png"
+			}
+			army = {
+				large = "gfx/Leaders/IKA/TFR_IKA_matt_shea_gen.png"
+			}
+		}
+		country_leader = {
+			ideology = christian_nationalism
+		}
+		corps_commander = {
+				traits = {
+					infantry_officer
+				}
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+	}
+	IKA_steven_anderson_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/Leaders/IKA/TFR_IKA_steven_anderson.png"
+			}
+			army = {
+				large = "gfx/Leaders/IKA/IKA_steven_anderson_gen.png"
+			}
+		}
+		country_leader = {
+			ideology = ifb_theocracy
+		}
+	}
+}

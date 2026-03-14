@@ -1,0 +1,18 @@
+﻿l_english:
+ usa.105.t: "The Line We Tow"
+ usa.105.desc: "This nation's future will be determined by those who are willing to step up to the plate and sacrifice everything, thus we must decide what faction we will aid in the event of the inevitable."
+ usa.105.a: "This Nation Shall Not Perish From the Earth!"
+ usa.105.b: "For Democracy!"
+ usa.105.c: "Liberty To Those Oppressed By This Regime!"
+ usa.105.d: "The Time Has Come..."
+ usa.105.e: "Our Plans Are Complete..."
+ usa.105.f: "In defense of our community!"
+ usa.105.g: "To Arms In Dixie!"
+ usa.105.h: "We Must Reclaim America!"
+ usa.105.i: "Death To The State!"
+ usa.105.j: "¡Los Chicanos se Unen!"
+ usa.105.k: "Cascadia Lives!"
+ usa.105.l: "Save America from Satan's Control!"
+
+ USA_side_with_trump_tooltip: "Side With §RTrump§!, to make America great again!\nThis allows you to play: \n- @USC §Y[USC.GetName] (Trump)§!"
+ USA_side_with_resistance_tooltip: "Side With §CBiden§!, for a return to normalcy!\nThis allows you to play: \n- @USB §Y[USB.GetName] (Biden)§!\n- @APA §Y[APA.GetName]§!\n- @PTF §Y[PTF.GetName]§!\n- @NSM §Y[NSM.GetName]§!\n- @ATW §Y[ATW.GetName]§!\n- @IKA §Y[IKA.GetName]§!\n The §Y$party_popularity_dynamic_modifier$§! modifier will be mapped to the $social_liberal_color_name$ Party"

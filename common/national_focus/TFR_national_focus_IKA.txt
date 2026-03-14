@@ -31,6 +31,12 @@ focus_tree = {
 			base = 20
 		}
 		completion_reward = {
+			set_power_balance = {
+				id = IKA_power_balance
+				left_side = IKA_nationalist_side
+				right_side = IKA_fundamentalist_side
+				set_value = 0
+			}
 			country_event = {
 				id = IKA.1 
 			}
@@ -189,7 +195,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = {
-			focus = IKA_babylon_has_fallen
+			focus = IKA_guardians_of_the_faith
 		}
 		completion_reward = {
 			country_event = {

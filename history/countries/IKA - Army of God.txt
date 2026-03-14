@@ -8,7 +8,79 @@
 
 	set_country_flag = shithole_country
 
-	recruit_character = IKA_Donald_Spitz_char
+	recruit_character = IKA_donald_spitz_char
+	recruit_character = IKA_matt_shea_char
+	recruit_character = IKA_steven_anderson_char
+
+	set_politics = {	
+		ruling_party = nationalist
+		last_election = "2020.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		fascist = 18
+		nationalist = 56
+		authoritarian_democrat = 20
+		conservative = 6
+	}
+
+	set_party_name = {
+    		ideology = totalitarian_socialist 
+   			long_name = IKA_totalitarian_socialist_long
+    		name = IKA_totalitarian_socialist_short
+	}
+	set_party_name = {
+    		ideology = communist 
+    		long_name = IKA_communist_long
+    		name = IKA_communist_short
+	}
+	set_party_name = {
+    		ideology = libertarian_socialist 
+    		long_name = IKA_libertarian_socialist_long
+    		name = IKA_libertarian_socialist_short
+	}
+	set_party_name = {
+ 		ideology = social_democrat 
+    		long_name = IKA_social_democrat_long
+   		name = IKA_social_democrat_short
+	}
+	set_party_name = {
+    		ideology = social_liberal 
+   		long_name = IKA_social_liberal_long
+    		name = IKA_social_liberal_short
+	}
+	set_party_name = {
+    		ideology = market_liberal 
+    		long_name = IKA_market_liberal_long
+    		name = IKA_market_liberal_short
+	}
+	set_party_name = {
+    		ideology = conservative 
+    		long_name = IKA_conservative_long
+    		name = IKA_conservative_short
+	}
+	set_party_name = {
+    		ideology = authoritarian_democrat 
+    		long_name = IKA_authoritarian_democrat_long
+    		name = IKA_authoritarian_democrat_short
+	}
+	set_party_name = {
+    		ideology = nationalist 
+    		long_name = IKA_nationalist_long
+    		name = IKA_nationalist_short
+	}
+	set_party_name = {
+   		ideology = fascist 
+    		long_name = IKA_fascist_long
+    		name = IKA_fascist_short
+	}
+	set_party_name = {
+    		ideology = national_socialist 
+    		long_name = IKA_national_socialist_long
+    		name = IKA_national_socialist_short
+	}
 
 	add_ideas = {
     #Laws
@@ -114,15 +186,3 @@
 			}
 		}
 	}
-
-	set_politics = {	
-		ruling_party = nationalist
-		last_election = "2018.11.13"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
-	set_popularities = {
-		nationalist = 100
-	}
-
