@@ -26,11 +26,11 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				tag = RRR
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.10
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 		}
-		IKA_kill_NCA = {
+		IKA_kill_feds = {
 			picture = generic_christian_values
 			traits = {
 				ZZZ_blank_idea_trait
@@ -39,10 +39,20 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			modifier = {
+			targeted_modifier = {
 				tag = NCA
-				attack_bonus_against = 0.10
-				defense_bonus_against = 0.10
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = STC
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = GRA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
 			}
 		}
 		IKA_leaderless_resistance_dummy_idea = {
