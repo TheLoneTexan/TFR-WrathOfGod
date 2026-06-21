@@ -283,15 +283,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_guardians_of_the_faith
 		}
-		# Spawns 2 armor divisions in capital and gives land doctrine cost reduction
+		# Spawns armor division in capital and gives 100 M1A2 Abrams
 		completion_reward = {
 			custom_effect_tooltip = IKA_chariots_of_iron_tt
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.75
-				uses = 1
-				category = land_doctrine
-			}
 			hidden_effect = {
 				load_oob = IKA_chariots_of_iron_oob
 			}
@@ -330,7 +324,7 @@ focus_tree = {
 		}
 		# Increases stability and reduces consumer goods factor
 		completion_reward = {
-			add_stability = 0.10
+			add_war_support = 0.10
 			add_idea = IKA_abortionists_punished
 		}
 	}
@@ -353,17 +347,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IKA_rejecting_satan
 		}
-		# Increases buffs against Redneck Revolt and applies smaller bonuses against all socialist 2ACW factions
+		# Adds war support and moves BoP towards American Rebirth
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = IKA_kill_RRR
-				add_idea = IKA_greater_evil_idea
-			}
 			add_war_support = 0.10
 			add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = left
+            	id = IKA_balance_of_power
+            	value = 0.15
+            	side = left
 			}
 		}
 	}
@@ -386,17 +376,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = IKA_the_greater_evil
 		}
-		# Increases buffs against SFC and applies smaller bonuses against Trump, Biden, state gov'ts, and other feds
+		# Adds stability and moves BoP towards Babylon's Destruction
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = IKA_kill_NCA
-				add_idea = IKA_rejecting_satan_idea
-			}
 			add_stability = 0.05
 			add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = right
+            	id = IKA_balance_of_power
+            	value = 0.15
+            	side = right
         	}
 		}
 	}
@@ -469,7 +455,7 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_equal_under_god_not_man
 		}
-		# Spawns 3 militia divisions in capital
+		# Spawns 5 militia divisions in capital
 		completion_reward = {
 			custom_effect_tooltip = IKA_holy_minutemen_tt
 			hidden_effect = {
@@ -490,8 +476,9 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_rejecting_satan
 		}
-		# gives money by seizing wealth of wealthy sinners  
+		# gives money by seizing wealth of wealthy sinners, adds war support
 		completion_reward = {
+			add_war_support = 0.15
 			set_temp_variable = {
 				income_var_temp = 10
 			}
@@ -511,9 +498,10 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_rejecting_satan
 		}
-		# adds political power
+		# adds political power, remove 5% stability
 		completion_reward = {
 			add_political_power = 50
+			add_stability = -0.05
 		}
 	}
 	focus = {
@@ -535,23 +523,17 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_god_hate_gays
 		}
-		# adds stability, civillian and military factories
+		# adds political power, army/division experience gain, and command power gain, reduces manpower
 		completion_reward = {
 			country_event = {
 				id = IKA.6
 			}
-			add_stability = 0.05
-			1017 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
+			add_political_power = 100
+			add_manpower = -5000
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_leaderless_resistance_dummy_idea
+					add_idea = IKA_cleansing_of_atlanta_idea
 				}
 			}
 		}
@@ -570,16 +552,13 @@ focus_tree = {
 			focus = IKA_the_greater_evil
 			focus = IKA_rejecting_satan
 		}
-		# Replaces Abortionists Punished nat. spirit with Abortion Banned, essentially upgraded version
+		# Gives 5% stability and 50 political power, fires flavor event
 		completion_reward = {
 			country_event = {
 				id = IKA.4
 			}
-			add_stability = 0.10
-			swap_ideas = {
-				remove_idea = IKA_abortionists_punished
-				add_idea = IKA_abortion_banned
-			}
+			add_stability = 0.05
+			add_political_power = 50
 		}
 	}
 	focus = {
