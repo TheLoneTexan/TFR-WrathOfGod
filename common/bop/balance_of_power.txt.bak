@@ -39,7 +39,7 @@ IKA_power_balance = {
 
   #Fundamentalist Side
   side = {
-    id = IKA_fundamentalist_side
+    id = IKA_fundamentalist_range
     icon = GFX_bop_IKA_fundamentalist
     range = {
       id = IKA_fundamentalist_range

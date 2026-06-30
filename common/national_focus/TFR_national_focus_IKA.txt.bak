@@ -712,7 +712,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
-		x = 0
+		x = 2
 		y = 1
 		cost = 4
 		prerequisite = {
