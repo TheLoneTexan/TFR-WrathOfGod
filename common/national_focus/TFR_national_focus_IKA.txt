@@ -639,4 +639,86 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = IKA_holy_council_of_america
+		icon = GFX_focus_IKA_holy_council_america
+		relative_position_id = IKA_justice_for_the_unborn
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_justice_for_the_unborn
+		}
+		visible = {
+			has_completed_focus = IKA_justice_for_the_unborn
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.67
+			}
+		}
+	}
+	focus = {
+		id = IKA_elect_shea
+		icon = GFX_focus_IKA_elect_shea
+		relative_position_id = IKA_holy_council_of_america
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_holy_council_of_america
+		}
+		mutually_exclusive = {
+			focus = IKA_elect_spitz
+			focus = IKA_elect_anderson
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = IKA_elect_spitz
+		icon = GFX_focus_IKA_elect_spitz
+		relative_position_id = IKA_holy_council_of_america
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_holy_council_of_america
+		}
+		mutually_exclusive = {
+			focus = IKA_elect_shea
+			focus = IKA_elect_anderson
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = IKA_elect_anderson
+		icon = GFX_focus_IKA_elect_anderson
+		relative_position_id = IKA_holy_council_of_america
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_holy_council_of_america
+		}
+		mutually_exclusive = {
+			focus = IKA_elect_shea
+			focus = IKA_elect_spitz
+		}
+		completion_reward = {
+		}
+	}
 }

@@ -1,0 +1,58 @@
+IKA_power_balance = {
+	initial_value = 0
+	left_side = IKA_nationalist_side	
+	right_side = IKA_fundamentalist_side	
+	decision_category = IKA_balance_of_power_category
+
+  #Middle
+	range = {
+		id = IKA_balance_range
+		min = -0.33
+		max = 0.33
+		modifier = {
+			political_power_gain = 0.1
+		}
+		on_activate = {
+		}
+		on_deactivate = {
+		}
+	}
+
+  #Nationalist Side
+  side = {
+    id = IKA_nationalist_side
+    icon = GFX_bop_IKA_nationalist
+    range = {
+      id = IKA_nationalist_range
+      min = -1
+      max = -0.33
+      modifier = {
+      political_power_gain = 0.25
+      }
+    }
+    
+    on_activate = {
+    }
+    on_deactivate = {
+    }
+  }
+
+  #Fundamentalist Side
+  side = {
+    id = IKA_fundamentalist_range
+    icon = GFX_bop_IKA_fundamentalist
+    range = {
+      id = IKA_fundamentalist_range
+      min = 0.33
+      max = 1
+      modifier = {
+      political_power_gain = 0.25
+      }
+    }
+    on_activate = {
+    }
+    on_deactivate = {
+    }
+  }
+
+}
