@@ -289,6 +289,11 @@ focus_tree = {
 		# Spawns armor division in capital and gives 100 M1A2 Abrams
 		completion_reward = {
 			custom_effect_tooltip = IKA_chariots_of_iron_tt
+			add_equipment_to_stockpile = {
+				type = modern_tank_equipment_3
+				amount = 100
+				producer = IKA
+			}
 			hidden_effect = {
 				load_oob = IKA_chariots_of_iron_oob
 			}
