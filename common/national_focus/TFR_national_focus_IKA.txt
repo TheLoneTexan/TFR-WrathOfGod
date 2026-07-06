@@ -163,6 +163,9 @@ focus_tree = {
 		}
 		# Creates Guardians of the Faith
 		completion_reward = {
+			add_ideas = {
+				IKA_christian_moral_police
+			}
 			country_event = {
 				id = IKA.2
 			}
