@@ -1703,5 +1703,39 @@ ideas = {
 				base = 5
 			}
 		}
+		IKA_christian_moral_police = {
+			removal_cost = -1
+			cost = 100
+			level = 1
+			picture = laws_security_special_IKA
+			visible = {
+				original_tag = IKA
+				has_completed_focus = IKA_guardians_of_the_faith
+			}
+			available = {
+				hidden_trigger = {
+					has_completed_focus = IKA_guardians_of_the_faith
+				}
+			}
+			allowed_to_remove = {
+				hidden_trigger = [
+					NOT = {
+						has_completed_focus = IKA_guardians_of_the_faith
+					}
+				}
+			}
+			modifier = {
+				stability = 0.1
+				war_support = 0.1
+				resistance_decay = 0.35
+				resistance_growth = -0.35
+				compliance_growth = 0.35
+				personal_expense = 0.3
+				society_development_monthly = 0.025
+			}
+			ai_will_do = {
+				base = 5
+			}
+		}
 	}
 }
