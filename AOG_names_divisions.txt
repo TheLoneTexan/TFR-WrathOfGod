@@ -1,0 +1,195 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+
+#########################
+#BASIC UNIT NAMING GROUPS
+#########################
+AOG_INF_01 = {
+  name = "Infantry Division"
+  for_countries = { AOG }
+  can_use = { always = yes }
+  division_types = { "infantry" "motorized" "mechanized" "light_mechanized" }
+  fallback_name = "%d Infantry Division"
+  ordered = {
+		1 = { "1st Infantry 'The Old Fighters' Division" }
+		2 = { "2nd Infantry 'Two Swords' Division" }
+		3 = { "3rd Infantry 'Trinity' Division" }
+		4 = { "4th Infantry 'Gospel' Division" }
+		5 = { "5th Infantry 'Gideon's Hundreds' Division" }
+		6 = { "6th Infantry 'Georgia Peach' Division" }
+		7 = { "7th Infantry 'Blessed Seventh' Division" }
+		8 = { "8th Infantry 'Sword of the Lord' Division" }
+		9 = { "9th Infantry 'Crusaders' Division" }
+		10 = { "10th Infantry 'Moses' Division" }
+		11 = { "11th Infantry 'Elijah' Division" }
+		12 = { "12th Infantry 'Twelve Apostles' Division" }
+		13 = { "13th Infantry 'Jacob' Division" }
+		14 = { "14th Infantry 'Abraham's Host' Division" }
+		15 = { "15th Infantry 'Lionheart' Division" }
+		16 = { "16th Infantry 'Southern Cross' Division" }
+		17 = { "17th Infantry 'Pilgrims' Division" }
+		18 = { "18th Infantry 'Weaver's Avengers' Division" }
+		19 = { "19th Infantry 'Jerusalem' Division" }
+		20 = { "20th Infantry 'Palmetto' Division" }
+		21 = { "21st Infantry 'Flaming Sword' Division" }
+		22 = { "22nd Infantry 'Tabernacle' Division" }
+		23 = { "23rd Infantry 'Puritans' Division" }
+		24 = { "24th Infantry 'Martin Luther' Division" }
+		25 = { "25th Infantry 'Ulrich Zwingli' Division" 
+		26 = { "26th Infantry 'John Wesley' Division" }
+		27 = { "27th Infantry 'George Whitefield' Division" }
+		28 = { "28th Infantry 'Mary and Martha' Division" }
+		29 = { "29th Infantry 'Cross and Flag' Division" }
+		30 = { "30th Infantry 'Tarheel' Division" }
+		31 = { "31st Infantry 'St. Augustine' Division" }
+		32 = { "32nd Infantry 'King David' Division" }
+		33 = { "33rd Infantry 'Cotton State' Division" }
+		34 = { "34th Infantry 'Appeal to Heaven' Division" }
+		35 = { "35th Infantry 'Magnolia' Division" }
+		36 = { "36th Infantry 'Loin-Girders' Division" }
+		37 = { "37th Infantry 'Dmitriy Donskoy' Division" }
+		38 = { "38th Infantry 'Athleta Christi' Division" }
+		39 = { "39th Infantry 'Pelican' Division" }
+		40 = { "40th Infantry 'Forty Martyrs' Division" }
+		41 = { "41st Infantry 'Aaron's Rod' Division" }
+		41 = { "42nd Infantry 'Salt of the Earth' Division" }
+		43 = { "43rd Infantry 'Ozark' Division" }
+		44 = { "44th Infantry 'Burning Bush' Division" }
+		45 = { "45th Infantry 'Acolytes' Division" }
+		46 = { "46th Infantry 'Schwertler' Division" }
+		47 = { "47th Infantry 'Centurion' Division" }
+		48 = { "48th Infantry 'Isaiah' Division" }
+		49 = { "49th Infantry 'Florida' Division" }
+		50 = { "50th Infantry 'Jubilee' Division" }
+		51 = { "51st Infantry 'Old Dominion' Division" }
+		52 = { "52nd Infantry 'Reconquista' Division" }
+		53 = { "53rd Infantry 'Roland' Division" }
+		54 = { "54th Infantry 'Excalibur' Division" }
+		55 = { "55th Infantry 'Tennessee' Division" }
+		56 = { "56th Infantry 'Covenanters' Division" }
+		57 = { "57th Infantry 'Jael and Judith' Division" }
+		58 = { "58th Infantry 'St. Sebastian' Division" }
+		59 = { "59th Infantry 'Mount Carmel' Division" }
+		60 = { "60th Infantry 'Sons of Zebedee' Division" }
+		61 = { "61st Infantry 'Mayflower' Division" }
+		62 = { "62nd Infantry 'Snake-Handlers' Division" }
+		63 = { "63rd Infantry 'Kaleb of Axum' Division" }
+		64 = { "64th Infantry 'Big Tent' Division" }
+  }
+}
+
+AOG_ARM_01 = {
+  name = "Armored Division"
+  for_countries = { AOG }
+  can_use = { always = yes }
+  division_types = { "light_armor" "modern_armor" }
+  fallback_name = "%d Armored Division"
+  ordered = {
+		1 = { "1st Armored 'Holy Rollers' Division" }
+		2 = { "2nd Armored 'Fire and Brimstone' Division" }
+		3 = { "3rd Armored 'St. George' Division" }
+		4 = { "4th Armored 'Golden Trumpet' Division" }
+		5 = { "5th Armored 'Fifth Monarchy Men' Division" }
+		6 = { "6th Armored 'Armor of God' Division" }
+		7 = { "7th Armored 'Seven Mountains' Division" }
+		8 = { "8th Armored 'Templars' Division" }
+		9 = { "9th Armored 'Hospitallers' Division" }
+		10 = { "10th Armored 'Ten Commandments' Division" }
+		11 = { "11th Armored 'Eleventh Hour' Division" }
+		12 = { "12th Armored 'Twelve Tribes' Division" }
+		13 = { "13th Armored 'Peter and Paul' Division" }
+		14 = { "14th Armored 'Samson' Division" }
+		15 = { "15th Armored 'Riders of the Judgment' Division" }
+		16 = { "16th Armored 'Armageddon' Division" }
+		17 = { "17th Armored 'Circuit Riders' Division" }
+		18 = { "18th Armored 'Deo Vindice' Division" }
+		19 = { "19th Armored 'Jericho' Division" }
+		20 = { "20th Armored 'Vlad the Impaler' Division" }
+		21 = { "21st Armored 'John Hunyadi' Division" }
+		22 = { "22nd Armored 'St. Louis' Division" }
+		23 = { "23rd Armored 'Barbarossa' Division" }
+		24 = { "24th Armored 'Stonewall' Division" }
+  }
+}
+
+AOG_MAR_01 = {
+  name = "Marine Division"
+  for_countries = { AOG }
+  can_use = { always = yes }
+  division_types = { "marine" }
+  fallback_name = "%d Marine Division"
+  ordered = {
+    1 = { "1st Marine 'Red Sea' Division" }
+    2 = { "2nd Marine 'Galilee' Division" }
+    3 = { "3rd Marine 'Lepanto' Division" }
+    4 = { "4th Marine 'St. Brendan' Division" }
+    5 = { "5th Marine 'Tripoli' Division" }
+    6 = { "6th Marine 'Knights of Malta' Division" }
+    7 = { "7th Marine 'Mt. Ararat' Division" }
+    8 = { "8th Marine 'Jonah' Division" }
+  }
+}
+
+AOG_SPF_01 = {
+  name = "Joint Task Force"
+  for_countries = { AOG }
+  can_use = { always = yes }
+  division_types = { "infantry" "paratrooper" "mountaineers" } # keep as you had it (placeholder)
+  fallback_name = "%d Special Forces Division"
+  ordered = {
+		1 = { "1st Special Forces 'Archangel Michael' Division" }
+		2 = { "2nd Special Forces 'Archangel Gabriel' Division" }
+		3 = { "3rd Special Forces 'Archangel Uriel' Division" }
+		4 = { "4th Special Forces 'Archangel Raphael' Division" }
+		5 = { "5th Special Forces 'Ehud' Division" }
+		6 = { "6th Special Forces 'Lazarus' Division" }
+		7 = { "7th Special Forces 'Grail Knights' Division" }
+		8 = { "8th Special Forces 'Lohengrin' Division" }
+		9 = { "9th Special Forces 'Parsifal' Division" }
+		10 = { "10th Special Forces 'Constantine' Division" }
+		11 = { "11th Special Forces 'Mt. Zion' Division" }
+		12 = { "12th Special Forces 'Rock of Ages' Division" }
+		13 = { "13th Special Forces 'Maccabees' Division" }
+		14 = { "14th Special Forces 'Orange' Division" }
+		15 = { "15th Special Forces 'Swiss Guard' Division" }
+		16 = { "16th Special Forces 'Pillar of Fire' Division" }
+		17 = { "17th Special Forces 'Pillar of Cloud' Division" }
+		18 = { "18th Special Forces 'King Baldwin' Division" }
+		19 = { "19th Special Forces 'El Cid' Division" }
+		20 = { "20th Special Forces 'Tannhäuser' Division" }
+		21 = { "21st Special Forces 'Tabor Light' Division" }
+		22 = { "22nd Special Forces 'Joan of Arc' Division" }
+		23 = { "23rd Special Forces 'John III Sobieski' Division" }
+		24 = { "24th Special Forces 'Milites Christi' Division" }
+  }
+}
