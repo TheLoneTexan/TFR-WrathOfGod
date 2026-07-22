@@ -284,7 +284,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = {
-			focus = IKA_guardians_of_the_faith
+			focus = IKA_open_the_conversion_camps
 		}
 		# Spawns armor division in capital and gives 100 M1A2 Abrams
 		completion_reward = {
@@ -622,6 +622,7 @@ focus_tree = {
 			}
 		}
 	}
+	#Bridge Focus Tree
 	focus = {
 		id = IKA_justice_for_the_unborn
 		icon = GFX_focus_IKA_justice_for_the_unborn
@@ -729,4 +730,6 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	#Military Focus Tree
+	
 }
