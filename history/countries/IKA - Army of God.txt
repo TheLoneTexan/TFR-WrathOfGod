@@ -21,9 +21,9 @@
 
 	set_popularities = {
 		fascist = 18
-		nationalist = 56
-		authoritarian_democrat = 20
-		conservative = 6
+		nationalist = 54
+		authoritarian_democrat = 25
+		conservative = 3
 	}
 
 	set_party_name = {
