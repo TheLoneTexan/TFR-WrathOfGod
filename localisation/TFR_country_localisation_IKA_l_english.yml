@@ -397,6 +397,8 @@
  #tooltips
  IKA_the_seventh_seal_tt: "The §OSoutheast§! is under the banner of God and Jesus Christ. We can now organize our new §YHoly Society§!"
  IKA_holy_council_of_america_tt: "§OWe will establish our new Government§! and decide our course of action going forward"
+ IKA_chariots_of_iron_tt: "The Chariots of Iron have arrived!\n\n(§HAsheville§!) Create §G1§! Armor §HDivision§!"
+ IKA_welcome_christian_volunteers_tt: "The Faithful have arrived!\n\n(§HAsheville§!) Create §G2§! Volunteer Militia §HDivisions§!"
 
  #Laws
  IKA_christian_morality_police: "Christian Morality Police"
@@ -432,8 +434,6 @@
  IKA_guardians_of_the_faith_agency: "Guardians of the Faith"
  IKA_southeast_unified_tt: "The Army of God has United the §OSoutheast!§!"
  IKA_holy_minutemen_tt: "The Holy Minutemen have arrived!"
- IKA_chariots_of_iron_tt: "The Chariots of Iron have arrived!\n\n(§HAsheville§!) Create §G1§! Armor §HDivision§!"
- IKA_welcome_christian_volunteers_tt: "The Faithful have arrived!\n\n(§HAsheville§!) Create §G2§! Volunteer Militia §HDivisions§!"
 
 #Parties
  IKA_totalitarian_socialist_long: "§ROUTLAWED§!"
