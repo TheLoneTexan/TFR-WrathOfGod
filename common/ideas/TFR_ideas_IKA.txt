@@ -1,3 +1,12 @@
+### Search Terms
+## Military Dynamic Modifier
+## Economic Dynamic Modifier
+## New Apostle's Church Education Dynamic Modifier
+## New Apostle's Reformation Dynamic Modifier
+## New Apostle's Church and State Integration Dynamic Modifier
+## 
+##
+##
 ideas = {
 	country = {
 		IKA_shall_we_gather = {
@@ -10,9 +19,21 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				army_org = 5
-				army_attack_factor = 0.1
-				war_support_factor = 0.15
+				stability_factor = -0.15
+				political_power_gain = -0.1
+			}
+		}
+		IKA_declining_religiosity = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.05
 			}
 		}
 		IKA_kill_RRR = {
@@ -24,7 +45,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			modifier = {
+			targeted_modifier = {
 				tag = RRR
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.15
@@ -55,66 +76,6 @@ ideas = {
 				defense_bonus_against = 0.15
 			}
 		}
-		IKA_leaderless_resistance_dummy_idea = {
-			#Just Made For Tooltip, Dynamic Modifier is used instead
-			name = IKA_leaderless_resistance_dynamic
-			allowed = {
-				original_tag = IKA
-			}
-			modifier = {
-			}
-		}
-		IKA_walls_of_jericho_idea = {
-			#Just Made For Tooltip, Dynamic Modifier is used instead
-			name = IKA_leaderless_resistance_dynamic
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				army_attack_factor = 0.05
-			}
-		}
-		IKA_valley_of_death_idea = {
-			#Just Made For Tooltip, Dynamic Modifier is used instead
-			name = IKA_leaderless_resistance_dynamic
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				army_strength_factor = 0.10
-			}
-		}
-		IKA_we_shall_not_fear_idea = {
-			#Just Made For Tooltip, Dynamic Modifier is used instead
-			name = IKA_leaderless_resistance_dynamic
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				army_org_factor = 0.05
-			}
-		}
-		IKA_show_them_his_truth_idea = {
-			#Just Made For Tooltip, Dynamic Modifier is used instead
-			name = IKA_leaderless_resistance_dynamic
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				conscription_factor = 0.05
-			}
-		}
-		IKA_baptism_by_fire_idea = {
-			#Just Made For Tooltip, Dynamic Modifier is used instead
-			name = IKA_leaderless_resistance_dynamic
-			allowed = {
-				always = yes
-			}
-			modifier = {
-				experience_gain_army_unit_factor = 0.10
-				experience_gain_factor = 0.10
-			}
-		}
 		IKA_abortionists_punished = {
 			picture = generic_christian_values
 			traits = {
@@ -128,8 +89,117 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		IKA_secular_education_banned = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.10
+				political_power_gain = 0.25
+				academic_development_monthly = -0.01
+			}
+		}
+		IKA_punishing_sins = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.25
+				nationalist_drift = 0.05
+			}
+		}
+		IKA_anti_obscenity_laws = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+			}
+		}
+		IKA_a_society_for_christ = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.01
+				production_factory_max_efficiency_factor = 0.01
+				production_factory_efficiency_gain_factor = 0.0125
+				industrial_capacity_dockyard = 0.015
+				industrial_capacity_factory = 0.015
+				recruitable_population_factor = 0.025
+				business_value_factor = 0.01
+				personal_value_factor = 0.01
+
+			}
+		}
+		## Military Dynamic Modifier
+		IKA_military_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_military_dynamic
+			allowed = {
+				original_tag = IKA
+			}
+			modifier = {
+			}
+		}
+		IKA_walls_of_jericho_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_military_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				experience_gain_army_unit_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		IKA_valley_of_death_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_military_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_army_factor = 0.05
+				experience_gain_army_unit_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+		IKA_baptism_by_fire_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_military_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_defence_factor = 0.05
+			}
+		}
 		IKA_cleansing_of_atlanta_idea = {
-			name = IKA_leaderless_resistance_dynamic
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_military_dynamic
 			allowed = {
 				always = yes
 			}
@@ -138,6 +208,229 @@ ideas = {
 				experience_gain_factor = 0.05
 				army_org_factor = 0.05
 				command_power_gain = 0.05
+			}
+		}
+		## New Apostle's Church Education Dynamic Modifier
+		IKA_church_education_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_church_education_dynamic
+			allowed = {
+				original_tag = IKA
+			}
+			modifier = {
+			}
+		}
+		IKA_church_education_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_church_education_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = -0.05
+				political_power_gain = 0.1
+				stability_factor = 0.10
+			}
+		}
+		IKA_bible_study_classes_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_church_education_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		IKA_teach_the_rapture_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_church_education_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				nationalist_drift = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		## New Apostle's Reformation Dynamic Modifier
+		IKA_the_new_apostolic_reformation_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_the_new_apostolic_reformation_dynamic
+			allowed = {
+				original_tag = IKA
+			}
+			modifier = {
+			}
+		}
+		IKA_the_new_apostolic_reformation_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_the_new_apostolic_reformation_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+       			stability_factor = 0.05
+        		war_support_factor = 0.05
+        		nationalist_drift = 0.10
+			}
+		}
+		IKA_unify_the_churches_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_the_new_apostolic_reformation_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				nationalist_drift = 0.025
+       			stability_factor = 0.1
+				political_advisor_cost_factor = -0.25
+			}
+		}
+		IKA_true_womens_liberation_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_the_new_apostolic_reformation_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				recruitable_population_factor = 0.05
+				academic_development_monthly = -0.01
+			}
+		}
+		## New Apostle's Church and State Integration Dynamic Modifier
+		IKA_union_of_church_and_state_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_union_of_church_and_state_dynamic
+			allowed = {
+				original_tag = IKA
+			}
+			modifier = {
+			}
+		}
+		IKA_union_of_church_and_state_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_union_of_church_and_state_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+       			political_power_gain = 0.25
+        		nationalist_drift = 0.05
+        		stability_factor = -0.10
+			}
+		}
+		IKA_cleansing_fire_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_union_of_church_and_state_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+       			compliance_growth = 0.10
+				resistance_growth = 0.10
+			}
+		}
+		IKA_dominion_theology_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = IKA_union_of_church_and_state_dynamic
+			allowed = {
+				always = yes
+			}
+			modifier = {
+       			poverty_development_monthly = 0.01
+				society_development_monthly = 0.01
+			}
+		}
+	}
+
+	head_minister = {
+		IKA_michael_bray_hog = {
+			picture = Michael_Bray
+			allowed = {
+				original_tag = IKA
+			}
+			visible = {
+				has_completed_focus = IKA_the_apostles
+			}
+			traits = {
+				eco_economic_organizer
+			}
+		}
+	}
+
+	foreign_minister = {
+		IKA_lou_engle_foreign_minister = {
+			picture = Lou_Engle
+			allowed = {
+				original_tag = IKA
+			}
+			visible = {
+				has_completed_focus = IKA_the_apostles
+			}
+			traits = {
+				eco_economic_organizer
+			}
+		}
+	}
+
+	economic_minister = {
+		IKA_rick_joyner_economic_minister = {
+			picture = Rick_Joyner
+			allowed = {
+				original_tag = IKA
+			}
+			visible = {
+				has_completed_focus = IKA_the_apostles
+			}
+			traits = {
+				eco_economic_organizer
+			}
+		}
+
+	}
+
+	interior_minister = {
+		IKA_clayton_waagner_interior_minister = {
+			picture = Clayton_Waagner
+			allowed = {
+				original_tag = IKA
+			}
+			visible = {
+				has_completed_focus = IKA_the_apostles
+			}
+			traits = {
+				eco_economic_organizer
+			}
+		}
+	}
+
+	intelligence_minister = {
+		IKA_scott_roeder_intelligence_minister = {
+			picture = Scott_Roeder
+			allowed = {
+				original_tag = IKA
+			}
+			visible = {
+				has_completed_focus = IKA_the_apostles
+			}
+			traits = {
+				eco_economic_organizer
+			}
+		}
+	}
+	
+	theorist_minister = {
+		IKA_david_leach_defense_minister = {
+			picture = David_Leach
+			allowed = {
+				original_tag = IKA
+			}
+			visible = {
+				has_completed_focus = IKA_the_apostles
+			}
+			traits = {
+				eco_economic_organizer
 			}
 		}
 	}

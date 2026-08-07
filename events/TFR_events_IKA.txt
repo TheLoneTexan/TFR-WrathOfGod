@@ -74,6 +74,17 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.7.a
+        set_country_flag = IKA_southeast_unified
+        set_country_flag = IKA_aog_elections
+
+        hidden_effect = {
+            load_focus_tree = {
+                tree = IKA_focus_tree
+                keep_completed = yes
+            }
+            mark_focus_tree_layout_dirty = yes
+        }
+        custom_effect_tooltip = focus_unlock_tooltip
     }
 }
 
@@ -106,7 +117,7 @@ country_event = {
 
     is_triggered_only = yes
     option = {
-        name = IKA.9.a
+        name = IKA.10.a
     }
 }
 
@@ -118,8 +129,50 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.11.a
+        if = {
+            limit = {
+                power_balance_value = {
+                    id = IKA_power_balance
+                    value > 0
+                }
+            }
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = -0.15
+            }
+        }
+        else = {
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = 0.15
+            }
+        }
+        country_event = { 
+            id = IKA.12 
+        }
+    }
+    option = {
+        name = IKA.11.b
+        add_power_balance_value = {
+            id = IKA_power_balance
+            value = -0.15
+        }
+        country_event = { 
+            id = IKA.12 
+        }
+    }
+    option = {
+        name = IKA.11.c
+        add_power_balance_value = {
+            id = IKA_power_balance
+            value = 0.15
+        }
+        country_event = { 
+            id = IKA.12 
+        }
     }
 }
+
 country_event = {
     id = IKA.12
     title = IKA.12.t
@@ -128,18 +181,46 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.12.a
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = left
+        if = {
+            limit = {
+                power_balance_value = {
+                    id = IKA_power_balance
+                    value > 0
+                }
+            }
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = -0.15
+            }
+        }
+        else = {
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = 0.15
+            }
+        }
+        country_event = { 
+            id = IKA.13 
         }
     }
     option = {
         name = IKA.12.b
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = right
+            add_power_balance_value = {
+            id = IKA_power_balance
+            value = -0.15
+        }
+        country_event = { 
+            id = IKA.13 
+        }
+    }
+        option = {
+        name = IKA.12.c
+            add_power_balance_value = {
+            id = IKA_power_balance
+            value = 0.15
+        }
+        country_event = { 
+            id = IKA.13 
         }
     }
 }
@@ -152,19 +233,46 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.13.a
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = left
+        if = {
+            limit = {
+                power_balance_value = {
+                    id = IKA_power_balance
+                    value > 0
+                }
+            }
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = -0.15
+            }
         }
-        load_oob = IKA_brighams_brigade_oob
+        else = {
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = 0.15
+            }
+        }
+        country_event = { 
+            id = IKA.14 
+        }
     }
     option = {
         name = IKA.13.b
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = right
+        add_power_balance_value = {
+            id = IKA_power_balance
+            value = -0.15
+        }
+        country_event = { 
+            id = IKA.14 
+        }
+    }
+        option = {
+        name = IKA.13.c
+        add_power_balance_value = {
+            id = IKA_power_balance
+            value = 0.15
+        }
+        country_event = { 
+            id = IKA.14 
         }
     }
 }
@@ -179,39 +287,44 @@ country_event = {
         name = IKA.14.a
         if = {
             limit = {
-                balance_of_power = {
-                    id = IKA_balance_of_power
+                power_balance_value = {
+                    id = IKA_power_balance
                     value > 0
                 }
             }
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = left
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = -0.15
             }
         }
         else = {
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = right
+            add_power_balance_value = {
+                id = IKA_power_balance
+                value = 0.15
             }
+        }
+        country_event = { 
+            id = IKA.15 
         }
     }
     option = {
         name = IKA.14.b
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = left
+        add_power_balance_value = {
+            id = IKA_power_balance
+            value = -0.15
+        }
+        country_event = { 
+            id = IKA.15 
         }
     }
     option = {
         name = IKA.14.c
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = right
+        add_power_balance_value = {
+            id = IKA_power_balance
+            value = 0.15
+        }
+        country_event = { 
+            id = IKA.15 
         }
     }
 }
@@ -226,39 +339,30 @@ country_event = {
         name = IKA.15.a
         if = {
             limit = {
-                balance_of_power = {
-                    id = IKA_balance_of_power
-                    value > 0
+                power_balance_value = {
+                    id = IKA_power_balance
+                    value < -0.33
                 }
             }
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = left
+            country_event = {
+                id = IKA.17
+            }
+        }
+        else_if = {
+            limit = {
+                power_balance_value = {
+                    id = IKA_power_balance
+                    value > 0.33
+                }
+            }
+            country_event = {
+                id = IKA.18
             }
         }
         else = {
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = right
+            country_event = {
+                id = IKA.16
             }
-        }
-    }
-    option = {
-        name = IKA.15.b
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = left
-        }
-    }
-    option = {
-        name = IKA.15.c
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = right
         }
     }
 }
@@ -271,41 +375,15 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.16.a
-        if = {
-            limit = {
-                balance_of_power = {
-                    id = IKA_balance_of_power
-                    value > 0
-                }
-            }
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = left
-            }
+        clr_country_flag = IKA_aog_elections
+        set_country_flag = IKA_spitz_elected
+        complete_national_focus = IKA_the_apostles
+        hidden_effect = {
+        load_focus_tree = {
+            tree = IKA_focus_tree
+            keep_completed = yes
         }
-        else = {
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = right
-            }
-        }
-    }
-    option = {
-        name = IKA.16.b
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = left
-        }
-    }
-    option = {
-        name = IKA.16.c
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = right
+        mark_focus_tree_layout_dirty = yes
         }
     }
 }
@@ -318,41 +396,21 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.17.a
-        if = {
-            limit = {
-                balance_of_power = {
-                    id = IKA_balance_of_power
-                    value > 0
-                }
-            }
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = left
-            }
+        set_politics = {
+            ruling_party = authoritarian_democrat
+            last_election = "2020.1.1"
+            election_frequency = 48
+            elections_allowed = no
         }
-        else = {
-            add_balance_of_power = {
-                id = IKA_balance_of_power
-                value = 0.10
-                side = right
-            }
+        clr_country_flag = IKA_aog_elections
+        set_country_flag = IKA_shea_elected
+        complete_national_focus = IKA_the_pilgrims
+        hidden_effect = {
+        load_focus_tree = {
+            tree = IKA_focus_tree
+            keep_completed = yes
         }
-    }
-    option = {
-        name = IKA.17.b
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = left
-        }
-    }
-    option = {
-        name = IKA.17.c
-        add_balance_of_power = {
-            id = IKA_balance_of_power
-            value = 0.10
-            side = right
+        mark_focus_tree_layout_dirty = yes
         }
     }
 }
@@ -365,32 +423,28 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.18.a
-        if = {
-            limit = {
-                balance_of_power = {
-                    id = IKA_balance_of_power
-                    value < -0.33
+        clr_country_flag = IKA_aog_elections
+        set_country_flag = IKA_anderson_elected
+        complete_national_focus = IKA_the_redeemers 
+        hidden_effect = {
+            load_focus_tree = {
+                tree = IKA_focus_tree
+                keep_completed = yes
+            }
+            mark_focus_tree_layout_dirty = yes
+            add_country_leader_role = {
+                character = IKA_steven_anderson_char
+                promote_leader = yes
+                country_leader = {
+                    ideology = ifb_theocracy
                 }
             }
-            country_event = {
-                id = IKA.19
+            set_party_name = {
+                ideology = nationalist
+                name = IKA_redeemers_party_short
+                long_name = IKA_redeemers_party
             }
-        }
-        else_if = {
-            limit = {
-                balance_of_power = {
-                    id = IKA_balance_of_power
-                    value > 0.33
-                }
-            }
-            country_event = {
-                id = IKA.20
-            }
-        }
-        else = {
-            country_event = {
-                id = IKA.21
-            }
+            retire_country_leader = yes
         }
     }
 }
@@ -403,14 +457,8 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.19.a
-            set_politics = {
-                ruling_party = authoritarian_democrat
-                last_election = "2020.1.1"
-                election_frequency = 48
-                elections_allowed = no
-            }
-        }
     }
+}
 
 
 country_event = {
@@ -421,23 +469,8 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.20.a
-            add_country_leader_role = {
-                character = IKA_steven_anderson_char
-                promote_leader = yes
-                country_leader = {
-                    ideology = ifb_theocracy
-                }
-            }
-            set_party_name = {
-                ideology = nationalist
-                name = IKA_redeemer_party_short
-                long_name = IKA_redeemer_party
-            }
-            retire_country_leader = {
-                character = IKA_donald_spitz_char
-            }
-        }
     }
+}
 
 
 country_event = {
@@ -448,13 +481,114 @@ country_event = {
     is_triggered_only = yes
     option = {
         name = IKA.21.a
-                add_country_leader_role = {
-                 character = IKA_donald_spitz_char
-                promote_leader = yes
-                 country_leader = {
-                     ideology = theocracy
-                }
-            }
-        }
     }
+ }
+
+ country_event = {
+    id = IKA.22
+    title = IKA.22.t
+    desc = IKA.22.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.22.a
+    }
+ }
+
+ country_event = {
+    id = IKA.23
+    title = IKA.23.t
+    desc = IKA.23.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.23.a
+    }
+ }
+
+ country_event = {
+    id = IKA.24
+    title = IKA.24.t
+    desc = IKA.24.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.24.a
+    }
+ }
+
+ country_event = {
+    id = IKA.25
+    title = IKA.25.t
+    desc = IKA.25.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.25.a
+    }
+ }
+
+ country_event = {
+    id = IKA.26
+    title = IKA.26.t
+    desc = IKA.26.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.26.a
+        add_stability = 0.10
+    }
+    option = {
+        name = IKA.26.b
+        add_political_power = 150
+    }
+    option = {
+        name = IKA.26.c
+        load_oob = IKA_volunteers_oob
+    }
+ }
+
+ country_event = {
+    id = IKA.27
+    title = IKA.27.t
+    desc = IKA.27.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.27.a
+    }
+ }
+
+ country_event = {
+    id = IKA.28
+    title = IKA.28.t
+    desc = IKA.28.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.28.a
+    }
+ }
+
+ country_event = {
+    id = IKA.29
+    title = IKA.29.t
+    desc = IKA.29.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.29.a
+    }
+ }
+
+ country_event = {
+    id = IKA.30
+    title = IKA.30.t
+    desc = IKA.30.d
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.30.a
+    }
+ }
 

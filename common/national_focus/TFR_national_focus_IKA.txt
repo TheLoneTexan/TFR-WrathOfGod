@@ -3,7 +3,7 @@
 # By SoulSurvivor and NosaEpistemo
 ######################################################
 focus_tree = {
-	id = IKA
+	id = IKA_focus_tree
 	country = {
 		factor = 0
 		modifier = {
@@ -19,7 +19,7 @@ focus_tree = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
 		x = 0
-		y = 0
+		y = 1
 		cost = 4
 		# Declares on Klan, Rednecks, Carolinas, and Georgia, fires flavor event
 		will_lead_to_war_with = LWK
@@ -65,7 +65,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_babylon_has_fallen
 		}
@@ -86,7 +86,7 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_babylon_has_fallen
 		}
@@ -107,7 +107,7 @@ focus_tree = {
 		}
 		x = -2
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_the_red_devil
 		}
@@ -128,7 +128,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_the_red_devil
 		}
@@ -136,13 +136,21 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_walls_of_jericho_idea
 				}
 			}
 			hidden_effect = {
-				set_variable = {
+				add_to_variable = {
 					var = IKA_military_army_attack_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = IKA_military_experience_gain_army_unit_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = IKA_military_army_org_factor_dynamic_var
 					value = 0.05
 				}
 			}
@@ -157,14 +165,14 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_babylon_has_fallen
 		}
 		# Creates Guardians of the Faith
 		completion_reward = {
 			add_ideas = {
-				IKA_christian_moral_police
+				IKA_christian_morality_police
 			}
 			country_event = {
 				id = IKA.2
@@ -202,7 +210,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_guardians_of_the_faith
 		}
@@ -223,7 +231,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_the_servants_of_babylon
 		}
@@ -231,14 +239,22 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_valley_of_death_idea
 				}
 			}
 			hidden_effect = {
-				set_variable = {
-					var = IKA_military_army_strength_factor_dynamic_var
-					value = 0.10
+				add_to_variable = {
+					var = IKA_military_command_power_gain_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = IKA_military_army_org_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = IKA_military_experience_gain_army_unit_factor_dynamic_var
+					value = 0.05
 				}
 			}
 		}
@@ -252,25 +268,15 @@ focus_tree = {
 		}
 		x = 2
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_the_servants_of_babylon
 		}
 		# Bonus Division Organization
 		completion_reward = {
-			add_army_experience = 25
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
-					add_idea = IKA_we_shall_not_fear_idea
-				}
-			}
-			hidden_effect = {
-				set_variable = {
-					var = IKA_military_army_org_factor_dynamic_var
-					value = 0.05
-				}
-			}
+			army_experience = 50
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 	}
 	focus = {
@@ -282,7 +288,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_open_the_conversion_camps
 		}
@@ -308,7 +314,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_walls_of_jericho
 		}
@@ -326,14 +332,16 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_valley_of_death
 		}
 		# Increases stability and reduces consumer goods factor
 		completion_reward = {
 			add_war_support = 0.10
-			add_idea = IKA_abortionists_punished
+			add_ideas = {
+				IKA_abortionists_punished
+			}
 		}
 	}
 	focus = {
@@ -358,10 +366,9 @@ focus_tree = {
 		# Adds war support and moves BoP towards American Rebirth
 		completion_reward = {
 			add_war_support = 0.10
-			add_balance_of_power = {
-            	id = IKA_balance_of_power
-            	value = 0.15
-            	side = left
+			add_power_balance_value = {
+            	id = IKA_power_balance
+            	value = -0.15
 			}
 		}
 	}
@@ -387,10 +394,9 @@ focus_tree = {
 		# Adds stability and moves BoP towards Babylon's Destruction
 		completion_reward = {
 			add_stability = 0.05
-			add_balance_of_power = {
-            	id = IKA_balance_of_power
+			add_power_balance_value = {
+            	id = IKA_power_balance
             	value = 0.15
-            	side = right
         	}
 		}
 	}
@@ -403,7 +409,7 @@ focus_tree = {
 		}
 		x = -3
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_the_greater_evil
 		}
@@ -411,21 +417,16 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_baptism_by_fire_idea
 				}
 			}
 			hidden_effect = {
-				set_variable = {
-					var = IKA_military_experience_gain_army_unit_factor_dynamic_var
-					value = 0.10
-				}
-				set_variable = {
-					var = IKA_military_experience_gain_factor_dynamic_var
-					value = 0.10
+				add_to_variable = {
+					var = IKA_military_army_defence_factor_dynamic_var
+					value = 0.05
 				}
 			}
-			add_idea = IKA_baptism_by_fire_idea
 		}
 	}
 	focus = {
@@ -437,7 +438,7 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_the_greater_evil
 		}
@@ -456,7 +457,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_baptism_by_fire
 		}
@@ -480,7 +481,7 @@ focus_tree = {
 		}
 		x = 1
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_rejecting_satan
 		}
@@ -502,7 +503,7 @@ focus_tree = {
 		}
 		x = 3
 		y = 1
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_rejecting_satan
 		}
@@ -521,7 +522,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 3
 		available = {
 			has_full_control_of_state = 1017
 		}
@@ -540,8 +541,32 @@ focus_tree = {
 			add_manpower = -5000
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_cleansing_of_atlanta_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_military_experience_gain_army_unit_factor_dynamic_var
+					value = 0.05
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_military_experience_gain_factor_dynamic_var
+					value = 0.05
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_military_army_org_factor_dynamic_var
+					value = 0.05
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_military_command_power_gain_dynamic_var
+					value = 0.05
 				}
 			}
 		}
@@ -555,7 +580,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 2
-		cost = 4
+		cost = 3
 		prerequisite = {
 			focus = IKA_the_greater_evil
 			focus = IKA_rejecting_satan
@@ -578,7 +603,7 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 2
 		prerequisite = {
 			focus = IKA_ban_prenatal_infanticide
 		}
@@ -587,41 +612,41 @@ focus_tree = {
 			add_political_power = 25
 		}
 	}
-	focus = {
-		id = IKA_the_seventh_seal
-		icon = GFX_focus_IKA_the_seventh_seal
-		relative_position_id = IKA_new_dawn_ministries
-		search_filters = {
-			FOCUS_FILTER_WAR_SUPPORT
-		}
-		x = 0
-		y = 1
-		cost = 4
-		prerequisite = {
-			focus = IKA_new_dawn_ministries
-		}
-		prerequisite = {
-			focus = IKA_holy_minutemen
-			focus = IKA_cleansing_of_atlanta
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = IKA_the_seventh_seal_trigger_tt
-				NOT = {
-					country_exists = GRA
-					country_exists = LWK
-					country_exists = RRR
-					country_exists = STC
-					country_exists = NCA
+    focus = {
+        id = IKA_the_seventh_seal
+        icon = GFX_focus_IKA_the_seventh_seal
+        relative_position_id = IKA_new_dawn_ministries
+        search_filters = {
+            FOCUS_FILTER_WAR_SUPPORT
+        }
+        x = 0
+        y = 1
+        cost = 1
+        prerequisite = {
+            focus = IKA_new_dawn_ministries
+        }
+        prerequisite = {
+            focus = IKA_holy_minutemen
+            focus = IKA_cleansing_of_atlanta
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = IKA_southeast_unified_tt
+                NOT = { country_exists = GRA 
+                 country_exists = LWK 
+                 country_exists = RRR 
+                 country_exists = STC 
+                 country_exists = NCA 
 				}
+            }
+        }
+        completion_reward = {
+            custom_effect_tooltip = IKA_the_seventh_seal_tt
+            country_event = { 
+				id = IKA.7 
 			}
-		}
-		completion_reward = {
-			country_event = {
-				id = IKA.7
-			}
-		}
-	}
+        }
+    }
 	#Bridge Focus Tree
 	focus = {
 		id = IKA_justice_for_the_unborn
@@ -632,19 +657,22 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 1
 		prerequisite = {
 			focus = IKA_the_seventh_seal
 		}
-		visible = {
-			has_completed_focus = IKA_the_seventh_seal
+		allow_branch = {
+			has_country_flag = IKA_southeast_unified
 		}
 		completion_reward = {
 			country_event = {
 				id = IKA.8
+			}
+			country_event = {
 				id = IKA.9
+			}
+			country_event = {
 				id = IKA.10
-				id = IKA.11
 			}
 		}
 	}
@@ -657,22 +685,27 @@ focus_tree = {
 		}
 		x = 0
 		y = 1
-		cost = 4
+		cost = 1
 		prerequisite = {
 			focus = IKA_justice_for_the_unborn
 		}
-		visible = {
-			has_completed_focus = IKA_justice_for_the_unborn
+		allow_branch = {
+			has_country_flag = IKA_southeast_unified
 		}
 		completion_reward = {
-			country_event = {
-				id = IKA.67
+			custom_effect_tooltip = IKA_holy_council_of_america_tt
+			hidden_effect = {
+				country_event = {
+					id = IKA.11
+				}
 			}
+			
 		}
 	}
+	#The Pilgrims Focus Tree
 	focus = {
-		id = IKA_elect_shea
-		icon = GFX_focus_IKA_elect_shea
+		id = IKA_the_pilgrims
+		icon = GFX_focus_IKA_the_pilgrims
 		relative_position_id = IKA_holy_council_of_america
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
@@ -683,16 +716,35 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_holy_council_of_america
 		}
+		allow_branch = {
+			OR = {
+				has_country_flag = IKA_aog_elections
+				has_country_flag = IKA_shea_elected
+			}
+		}
+		offset = {
+			x = 2
+			y = 0
+			trigger = {
+				has_country_flag = IKA_shea_elected
+			}
+		}	
 		mutually_exclusive = {
-			focus = IKA_elect_spitz
-			focus = IKA_elect_anderson
+			focus = IKA_the_apostles
+			focus = IKA_the_redeemers
 		}
 		completion_reward = {
+			USA_enable_raise_legitimacy = yes
+			custom_effect_tooltip = focus_unlock_tooltip
+			country_event = {
+				id = IKA.20
+			}
 		}
 	}
+	#New Apostles Focus Tree
 	focus = {
-		id = IKA_elect_spitz
-		icon = GFX_focus_IKA_elect_spitz
+		id = IKA_the_apostles
+		icon = GFX_focus_IKA_the_apostles
 		relative_position_id = IKA_holy_council_of_america
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
@@ -703,16 +755,964 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_holy_council_of_america
 		}
+		allow_branch = {
+			OR = {
+				has_country_flag = IKA_aog_elections
+				has_country_flag = IKA_spitz_elected
+			}
+		}
 		mutually_exclusive = {
-			focus = IKA_elect_shea
-			focus = IKA_elect_anderson
+			focus = IKA_the_pilgrims
+			focus = IKA_the_redeemers
 		}
 		completion_reward = {
+			USA_enable_raise_legitimacy = yes
+			custom_effect_tooltip = focus_unlock_tooltip
+			add_country_leader_role = {
+           		character = IKA_donald_spitz_char
+            	promote_leader = yes
+            	country_leader = {
+                	ideology = theocracy
+            	}
+        	}
+			country_event = {
+				id = IKA.19
+			}
+			set_politics = {
+				ruling_party = nationalist
+			}
+			custom_effect_tooltip = appoint_head_minister_tooltip
+			show_ideas_tooltip = IKA_michael_bray_hog
+			custom_effect_tooltip = appoint_foreign_minister_tooltip  
+			show_ideas_tooltip = IKA_lou_engle_foreign_minister
+			custom_effect_tooltip = appoint_economic_minister_tooltip 
+			show_ideas_tooltip = IKA_rick_joyner_economic_minister
+			custom_effect_tooltip = appoint_interior_minister_tooltip
+			show_ideas_tooltip = IKA_clayton_waagner_interior_minister
+			custom_effect_tooltip = appoint_int_minister_tooltip
+			show_ideas_tooltip = IKA_scott_roeder_intelligence_minister
+			custom_effect_tooltip = appoint_theorist_minister_tooltip
+			show_ideas_tooltip = IKA_david_leach_defense_minister
+			hidden_effect = {
+				add_ideas = {
+					IKA_michael_bray_hog
+					IKA_lou_engle_foreign_minister
+					IKA_rick_joyner_economic_minister
+					IKA_david_leach_defense_minister
+					IKA_scott_roeder_intelligence_minister
+					IKA_clayton_waagner_interior_minister
+				}
+			}
+			activate_decision = IKA_establish_the_new_holy_government
+			activate_decision = IKA_promote_responsible_business
 		}
 	}
 	focus = {
-		id = IKA_elect_anderson
-		icon = GFX_focus_IKA_elect_anderson
+		id = IKA_expose_democracys_godless_origin
+		icon = GFX_focus_IKA_expose_democracys_godless_origin
+		relative_position_id = IKA_the_apostles
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -7
+		y = 1
+		cost = 4
+		prerequisite = {
+			    focus = IKA_the_apostles
+		}
+		allow_branch = {
+			NOT = {
+				has_completed_focus = IKA_the_redeemers
+			}
+			has_country_flag = IKA_spitz_elected
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			activate_decision = IKA_democracy_the_false_god
+		}
+	}
+	focus = {
+		id = IKA_new_apostolic_reformation
+		icon = GFX_focus_IKA_new_apostolic_reformation
+		relative_position_id = IKA_the_apostles
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -3
+		y = 1
+		cost = 4
+		prerequisite = {
+			    focus = IKA_the_apostles
+		}
+		allow_branch = {
+			has_country_flag = IKA_spitz_elected
+		}
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_shall_we_gather
+					add_idea = IKA_the_new_apostolic_reformation_idea
+				}
+            }
+			hidden_effect = {
+				remove_ideas = IKA_shall_we_gather
+				add_dynamic_modifier = {
+					modifier = IKA_the_new_apostolic_reformation_dynamic
+				}
+				set_variable = {
+					var = IKA_the_new_apostolic_reformation_stability_factor_dynamic_var
+					value = 0.05
+				}
+				set_variable = {
+					var = IKA_the_new_apostolic_reformation_war_support_factor_dynamic_var
+					value = 0.05
+				}
+				set_variable = {
+					var = IKA_the_new_apostolic_reformation_nationalist_drift_dynamic_var
+					value = 0.10
+				}
+			}
+			country_event = {
+				id = IKA.22
+			}
+			country_event = {
+				id = IKA.23
+			}
+			activate_decision = IKA_teach_the_new_apostolic_reformation
+		}
+	}
+	focus = {
+		id = IKA_punishment_for_the_wicked
+		icon = GFX_focus_IKA_punishment_for_the_wicked
+		relative_position_id = IKA_the_apostles
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 3
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_apostles
+		}
+		allow_branch = {
+			has_country_flag = IKA_spitz_elected
+		}
+		completion_reward = {
+			add_stability = 0.05
+			activate_decision = IKA_revoke_citizenship_from_the_godless
+		}
+	}
+	focus = {
+		id = IKA_place_of_women_and_non_believers
+		icon = GFX_focus_IKA_place_of_women_and_non_believers
+		relative_position_id = IKA_the_apostles
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 7
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_apostles
+		}
+		allow_branch = {
+			has_country_flag = IKA_spitz_elected
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_manpower = -10000
+		}
+	}
+	focus = {
+		id = IKA_ban_secular_education
+		icon = GFX_focus_IKA_ban_secular_education
+		relative_position_id = IKA_expose_democracys_godless_origin
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_expose_democracys_godless_origin
+		}
+		completion_reward = {
+			add_timed_idea = {
+    			idea = IKA_secular_education_banned
+    			days = 1080
+			}
+		}
+	}
+	focus = {
+		id = IKA_integration_of_church_and_state
+		icon = GFX_focus_IKA_integration_of_church_and_state
+		relative_position_id = IKA_expose_democracys_godless_origin
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_expose_democracys_godless_origin
+		}
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_declining_religiosity
+					add_idea = IKA_union_of_church_and_state_idea
+				}
+            }
+			hidden_effect = {
+				remove_ideas = IKA_declining_religiosity
+				add_dynamic_modifier = {
+					modifier = IKA_union_of_church_and_state_dynamic
+				}
+				set_variable = {
+					var = IKA_union_of_church_and_state_political_power_gain_dynamic_var
+					value = 0.25
+				}
+				set_variable = {
+					var = IKA_union_of_church_and_state_stability_factor_dynamic_var
+					value = -0.10
+				}
+				set_variable = {
+					var = IKA_union_of_church_and_state_nationalist_drift_dynamic_var
+					value = 0.05
+				}
+			}
+			activate_decision = IKA_the_lord_and_christ_are_supreme
+		}
+	}
+	focus = {
+		id = IKA_new_covenant_for_america
+		icon = GFX_focus_IKA_new_covenant_for_america
+		relative_position_id = IKA_new_apostolic_reformation
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_new_apostolic_reformation
+		}
+		prerequisite = {
+			focus = IKA_expose_democracys_godless_origin
+		}
+		completion_reward = {
+			activate_decision = IKA_the_lord_and_christ_are_supreme
+			country_event = {
+				id = IKA.26
+			}
+		}
+	}
+	focus = {
+		id = IKA_unify_the_churches
+		icon = GFX_focus_IKA_unify_the_churches
+		relative_position_id = IKA_new_apostolic_reformation
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_new_apostolic_reformation
+		}
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_the_new_apostolic_reformation_dummy_idea
+					add_idea = IKA_unify_the_churches_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_the_new_apostolic_reformation_nationalist_drift_dynamic_var
+					value = 0.025
+				}
+				add_to_variable = {
+					var = IKA_the_new_apostolic_reformation_stability_factor_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = IKA_the_new_apostolic_reformation_political_advisor_cost_factor_dynamic_var
+					value = -0.25
+				}
+			}
+			country_event = {
+				id = IKA.24
+			}
+		}
+	}
+	focus = {
+		id = IKA_finding_the_apostles
+		icon = GFX_focus_IKA_finding_the_apostles
+		relative_position_id = IKA_new_apostolic_reformation
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_new_apostolic_reformation
+		}
+		completion_reward = {
+			add_political_power = 50
+			activate_decision = IKA_invite_the_apostles
+			country_event = {
+				id = IKA.25
+			}
+		}
+	}
+	focus = {
+		id = IKA_burn_demonic_books
+		icon = GFX_focus_IKA_burn_demonic_books
+		relative_position_id = IKA_punishment_for_the_wicked
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_punishment_for_the_wicked
+		}
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = IKA_burn_the_followers_of_the_crescent_moon
+		icon = GFX_focus_IKA_burn_the_followers_of_the_crescent_moon
+		relative_position_id = IKA_punishment_for_the_wicked
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_punishment_for_the_wicked
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IKA_execute_abortionists
+		icon = GFX_focus_IKA_execute_abortionists
+		relative_position_id = IKA_punishment_for_the_wicked
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_punishment_for_the_wicked
+		}
+		prerequisite = {
+			focus = IKA_place_of_women_and_non_believers
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.27
+			}
+		}
+	}
+	focus = {
+		id = IKA_destroy_the_gay_agenda
+		icon = GFX_focus_IKA_destroy_the_gay_agenda
+		relative_position_id = IKA_place_of_women_and_non_believers
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_place_of_women_and_non_believers
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.28
+			}
+		}
+	}
+	focus = {
+		id = IKA_true_womens_liberation
+		icon = GFX_focus_IKA_true_womens_liberation
+		relative_position_id = IKA_place_of_women_and_non_believers
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_place_of_women_and_non_believers
+		}
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_the_new_apostolic_reformation_dummy_idea
+					add_idea = IKA_true_womens_liberation_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_the_new_apostolic_reformation_recruitable_population_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = IKA_the_new_apostolic_reformation_academic_development_monthly_dynamic_var
+					value = -0.01
+				}
+			}
+			activate_decision = IKA_restructure_womens_domestic_roles
+		}
+	}
+	focus = {
+		id = IKA_removing_satans_lies
+		icon = GFX_focus_IKA_removing_satans_lies
+		relative_position_id = IKA_ban_secular_education
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_ban_secular_education
+		}
+		prerequisite = {
+			focus = IKA_integration_of_church_and_state
+		}
+		completion_reward = {
+			effect_tooltip = {
+            	add_ideas = {
+					IKA_church_education_idea
+				}
+				
+            }
+			hidden_effect = {
+				add_dynamic_modifier = {
+					modifier = IKA_church_education_dynamic
+				}
+				set_variable = {
+					var = IKA_church_education_political_power_gain_dynamic_var
+					value = 0.1
+				}
+				set_variable = {
+					var = IKA_church_education_stability_factor_dynamic_var
+					value = 0.1
+				}
+				set_variable = {
+					var = IKA_church_education_research_speed_factor_dynamic_var
+					value = -0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_cross_on_government_buildings
+		icon = GFX_focus_IKA_cross_on_government_buildings
+		relative_position_id = IKA_integration_of_church_and_state
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = IKA_integration_of_church_and_state
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = IKA_seize_heretical_churches
+		icon = GFX_focus_IKA_seize_heretical_churches
+		relative_position_id = IKA_new_covenant_for_america
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_new_covenant_for_america
+		}
+		prerequisite = {
+			focus = IKA_unify_the_churches
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = IKA_appoint_holy_judges
+		icon = GFX_focus_IKA_appoint_holy_judges
+		relative_position_id = IKA_finding_the_apostles
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_finding_the_apostles
+		}
+		completion_reward = {
+			add_ideas = {
+				IKA_punishing_sins
+			}
+		}
+	}
+	focus = {
+		id = IKA_cleansing_fire
+		icon = GFX_focus_IKA_cleansing_fire
+		relative_position_id = IKA_burn_the_followers_of_the_crescent_moon
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_burn_the_followers_of_the_crescent_moon
+		}
+		prerequisite = {
+			focus = IKA_burn_demonic_books
+		}
+		prerequisite = {
+			focus = IKA_execute_abortionists
+		}
+		completion_reward = {
+			add_political_power = 100
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_union_of_church_and_state_dummy_idea
+					add_idea = IKA_cleansing_fire_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_union_of_church_and_state_compliance_growth_dynamic_var
+					value = 0.1
+				}
+				add_to_variable = {
+					var = IKA_union_of_church_and_state_resistance_growth_dynamic_var
+					value = 0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_save_the_children
+		icon = GFX_focus_IKA_save_the_children
+		relative_position_id = IKA_destroy_the_gay_agenda
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_destroy_the_gay_agenda
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = IKA_allow_feminine_jobs
+		icon = GFX_focus_IKA_allow_feminine_jobs
+		relative_position_id = IKA_true_womens_liberation
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_true_womens_liberation
+		}
+		completion_reward = {
+			add_ideas = {
+				lower_female_service
+			}
+		}
+	}
+	focus = {
+		id = IKA_launch_the_apostolic_news_network
+		icon = GFX_focus_IKA_launch_the_apostolic_news_network
+		relative_position_id = IKA_seize_heretical_churches
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_seize_heretical_churches
+		}
+		prerequisite = {
+			focus = IKA_appoint_holy_judges
+		}
+		completion_reward = {
+			add_stability = 0.10
+			country_event = {
+				id = IKA.29
+			}
+		}
+	}
+	focus = {
+		id = IKA_pornography_equals_death
+		icon = GFX_focus_IKA_pornography_equals_death
+		relative_position_id = IKA_save_the_children
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_cleansing_fire
+		}
+		prerequisite = {
+			focus = IKA_save_the_children
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IKA_respect_the_housewife
+		icon = GFX_focus_IKA_respect_the_housewife
+		relative_position_id = IKA_allow_feminine_jobs
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_allow_feminine_jobs
+		}
+		completion_reward = {
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = IKA_bible_study_classes
+		icon = GFX_focus_IKA_bible_study_classes
+		relative_position_id = IKA_removing_satans_lies
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = IKA_removing_satans_lies
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = communist
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.01
+			}
+			add_popularity = {
+				ideology = national_socialist
+				popularity = -0.01
+			}
+			effect_tooltip = {
+            	swap_ideas = {
+					remove_idea = IKA_church_education_dummy_idea
+					add_idea = IKA_bible_study_classes_idea
+				}
+				
+            }
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_church_education_research_speed_factor_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_christian_c_span
+		icon = GFX_focus_IKA_christian_c_span
+		relative_position_id = IKA_cross_on_government_buildings
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_cross_on_government_buildings
+		}
+		prerequisite = {
+			focus = IKA_launch_the_apostolic_news_network
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IKA_spitzs_sunday_sermons
+		icon = GFX_focus_IKA_spitzs_sunday_sermons
+		relative_position_id = IKA_launch_the_apostolic_news_network
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_launch_the_apostolic_news_network
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = IKA_ban_satanic_entertainment
+		icon = GFX_focus_IKA_ban_satanic_entertainment
+		relative_position_id = IKA_launch_the_apostolic_news_network
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_launch_the_apostolic_news_network
+		}
+		completion_reward = {
+			add_political_power = 25
+			country_event = {
+				id = IKA.30
+			}
+		}
+	}
+	focus = {
+		id = IKA_define_sinful_behavior
+		icon = GFX_focus_IKA_define_sinful_behavior
+		relative_position_id = IKA_pornography_equals_death
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_pornography_equals_death
+		}
+		completion_reward = {
+			add_ideas = {
+				IKA_anti_obscenity_laws
+			}
+		}
+	}
+	focus = {
+		id = IKA_national_blue_law
+		icon = GFX_focus_IKA_national_blue_law
+		relative_position_id = IKA_pornography_equals_death
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_pornography_equals_death
+		}
+		completion_reward = {
+			activate_decision = IKA_pass_the_blue_laws
+		}
+	}
+	focus = {
+		id = IKA_teach_the_rapture
+		icon = GFX_focus_IKA_teach_the_rapture
+		relative_position_id = IKA_bible_study_classes
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_bible_study_classes
+		}
+		prerequisite = {
+			focus = IKA_christian_c_span
+		}
+		completion_reward = {
+			effect_tooltip = {
+            	swap_ideas = {
+					remove_idea = IKA_church_education_dummy_idea
+					add_idea = IKA_teach_the_rapture_idea
+				}
+				
+            }
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_church_education_army_attack_factor_dynamic_var
+					value = 0.05
+				}
+				add_to_variable = {
+					var = IKA_church_education_nationalist_drift_dynamic_var
+					value = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_dominion_theology
+		icon = GFX_focus_IKA_dominion_theology
+		relative_position_id = IKA_spitzs_sunday_sermons
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_spitzs_sunday_sermons
+		}
+		prerequisite = {
+			focus = IKA_christian_c_span
+		}
+		completion_reward = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = IKA_union_of_church_and_state_dummy_idea
+					add_idea = IKA_dominion_theology_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = IKA_union_of_church_and_state_poverty_development_monthly_dynamic_var
+					value = 0.01
+				}
+				add_to_variable = {
+					var = IKA_union_of_church_and_state_society_development_monthly_dynamic_var
+					value = 0.01
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_the_spitz_code
+		icon = GFX_focus_IKA_the_spitz_code
+		relative_position_id = IKA_ban_satanic_entertainment
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_ban_satanic_entertainment
+		}
+		prerequisite = {
+			focus = IKA_define_sinful_behavior
+		}
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = IKA_a_godly_society
+		icon = GFX_focus_IKA_a_godly_society
+		relative_position_id = IKA_define_sinful_behavior
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_define_sinful_behavior
+		}
+		prerequisite = {
+			focus = IKA_national_blue_law
+		}
+		completion_reward = {
+			add_ideas = {
+				IKA_a_society_for_christ
+			}
+		}
+	}
+	focus = {
+		id = IKA_khrushchevs_scheme_foiled
+		icon = GFX_focus_IKA_khrushchevs_scheme_foiled
+		relative_position_id = IKA_respect_the_housewife
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 2
+		cost = 4
+		prerequisite = {
+			focus = IKA_respect_the_housewife
+		}
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = IKA_millennial_dawn
+		icon = GFX_focus_IKA_millennial_dawn
+		relative_position_id = IKA_the_spitz_code
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_teach_the_rapture
+		}
+		prerequisite = {
+			focus = IKA_dominion_theology
+		}
+		prerequisite = {
+			focus = IKA_the_spitz_code
+		}
+		prerequisite = {
+			focus = IKA_a_godly_society
+		}
+		prerequisite = {
+			focus = IKA_khrushchevs_scheme_foiled
+		}
+		completion_reward = {
+			add_political_power = 175
+			
+		}
+	}
+	#The Redeemers Focus Tree
+	focus = {
+		id = IKA_the_redeemers
+		icon = GFX_focus_IKA_the_redeemers
 		relative_position_id = IKA_holy_council_of_america
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
@@ -723,13 +1723,81 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_holy_council_of_america
 		}
+		allow_branch = {
+			OR = {
+				has_country_flag = IKA_aog_elections
+				has_country_flag = IKA_anderson_elected
+			}
+		}
+		offset = {
+			x = -2
+			y = 0
+			trigger = {
+				has_country_flag = IKA_anderson_elected
+			}
+		}
 		mutually_exclusive = {
-			focus = IKA_elect_shea
-			focus = IKA_elect_spitz
+			focus = IKA_the_pilgrims
+			focus = IKA_the_apostles
+		}
+		completion_reward = {
+			USA_enable_raise_legitimacy = yes
+			custom_effect_tooltip = focus_unlock_tooltip
+			country_event = {
+				id = IKA.21
+			}
+		}
+	}
+	#Economy Focus Tree
+	focus = {
+		id = IKA_a_holy_economy
+		icon = GFX_focus_IKA_a_holy_economy
+		relative_position_id = IKA_holy_council_of_america
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -18
+		y = 2
+		cost = 4
+		prerequisite = {
+				focus = IKA_the_pilgrims
+			    focus = IKA_the_apostles
+				focus = IKA_the_redeemers
+		}
+		allow_branch = {
+    		OR = {
+        		has_country_flag = IKA_shea_elected
+        		has_country_flag = IKA_spitz_elected
+        		has_country_flag = IKA_anderson_elected
+    		}
 		}
 		completion_reward = {
 		}
 	}
 	#Military Focus Tree
-	
+	focus = {
+		id = IKA_assyria_at_the_gates
+		icon = GFX_focus_IKA_assyria_at_the_gates
+		relative_position_id = IKA_holy_council_of_america
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 18
+		y = 2
+		cost = 4
+		prerequisite = {
+				focus = IKA_the_pilgrims
+			    focus = IKA_the_apostles
+				focus = IKA_the_redeemers
+		}
+		allow_branch = {
+    		OR = {
+        		has_country_flag = IKA_shea_elected
+        		has_country_flag = IKA_spitz_elected
+        		has_country_flag = IKA_anderson_elected
+    		}
+		}
+		completion_reward = {
+		}
+	}
 }

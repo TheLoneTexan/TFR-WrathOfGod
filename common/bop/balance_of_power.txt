@@ -2,7 +2,7 @@ IKA_power_balance = {
 	initial_value = 0
 	left_side = IKA_nationalist_side	
 	right_side = IKA_fundamentalist_side	
-	decision_category = IKA_balance_of_power_category
+	decision_category = IKA_power_balance_category
 
   #Middle
 	range = {
@@ -27,7 +27,7 @@ IKA_power_balance = {
       min = -1
       max = -0.33
       modifier = {
-      political_power_gain = 0.25
+      	political_power_gain = 0.25
       }
     }
     
@@ -46,7 +46,7 @@ IKA_power_balance = {
       min = 0.33
       max = 1
       modifier = {
-      political_power_gain = 0.25
+      	political_power_gain = 0.25
       }
     }
     on_activate = {
@@ -54,5 +54,4 @@ IKA_power_balance = {
     on_deactivate = {
     }
   }
-
 }

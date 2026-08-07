@@ -21,9 +21,9 @@
 
 	set_popularities = {
 		fascist = 18
-		nationalist = 56
-		authoritarian_democrat = 20
-		conservative = 6
+		nationalist = 54
+		authoritarian_democrat = 25
+		conservative = 3
 	}
 
 	set_party_name = {
@@ -103,14 +103,63 @@
 
     #Country Ideas
 		IKA_shall_we_gather
+		IKA_declining_religiosity
 	}
 
 	add_dynamic_modifier = {
-		modifier = IKA_leaderless_resistance_dynamic
+		modifier = IKA_military_dynamic
+	}
+	set_variable = {
+		var = IKA_military_experience_gain_army_factor_dynamic_var
+		value = 0.10
+	}
+	set_variable = {
+		var = IKA_military_army_attack_factor_dynamic_var
+		value = -0.10
+	}
+	set_variable = {
+		var = IKA_military_experience_gain_army_unit_factor_dynamic_var
+		value = -0.20
+	}
+	set_variable = {
+		var = IKA_military_army_org_factor_dynamic_var
+		value = -0.20
+	}
+	set_variable = {
+		var = IKA_military_planning_speed_dynamic_var
+		value = -0.20
+	}
+	set_variable = {
+		var = IKA_military_max_planning_factor_dynamic_var
+		value = -0.20
 	}
 
 	add_dynamic_modifier = {
-		modifier = IKA_backwoods_economy_dynamic
+		modifier = IKA_economy_dynamic
+	}
+	set_variable = {
+		var = IKA_economy_production_speed_buildings_factor_dynamic_var
+		value = -0.25
+	}
+	set_variable = {
+		var = IKA_economy_production_factory_max_efficiency_factor_dynamic_var
+		value = -0.20
+	}
+	set_variable = {
+		var = IKA_economy_research_speed_factor_dynamic_var
+		value = -0.50
+	}
+	set_variable = {
+		var = IKA_economy_business_value_factor_dynamic_var
+		value = -0.10
+	}
+	set_variable = {
+		var = IKA_economy_industrial_development_monthly_dynamic_var
+		value = -0.02
+	}
+	set_variable = {
+		var = IKA_economy_poverty_development_monthly_dynamic_var
+		value = -0.02
 	}
 
 	set_technology = {

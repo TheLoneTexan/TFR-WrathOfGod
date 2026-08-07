@@ -1,5 +1,5 @@
-IKA_leaderless_resistance_dynamic = {
-	icon = GFX_idea_IKA_leaderless_resistance
+IKA_military_dynamic = {
+	icon = GFX_idea_IKA_military
 	enable = {
 		tag = IKA
 	}
@@ -13,6 +13,7 @@ IKA_leaderless_resistance_dynamic = {
 	experience_gain_army_factor = IKA_military_experience_gain_army_factor_dynamic_var
 	max_command_power = IKA_military_max_command_power_dynamic_var
 	command_power_gain_mult = IKA_military_command_power_gain_mult_dynamic_var
+	command_power_gain = IKA_military_command_power_gain_dynamic_var
 	army_org_factor = IKA_military_army_org_factor_dynamic_var
 	army_org_regain = IKA_military_army_org_regain_dynamic_var
 	army_strength_factor = IKA_military_army_strength_factor_dynamic_var
@@ -49,8 +50,8 @@ IKA_leaderless_resistance_dynamic = {
 	experience_gain_factor = IKA_military_experience_gain_factor_dynamic_var
 }
 
-IKA_backwoods_economy_dynamic = {
-	icon = GFX_idea_IKA_backwoods_economy_dynamic
+IKA_economy_dynamic = {
+	icon = GFX_idea_IKA_economy_dynamic
 	enable = {
 		tag = IKA
 	}
@@ -70,10 +71,10 @@ IKA_backwoods_economy_dynamic = {
 	production_lack_of_resource_penalty_factor = IKA_economy_production_lack_of_resource_penalty_factor_dynamic_var
 	conversion_cost_civ_to_mil_factor = IKA_economy_conversion_cost_civ_to_mil_factor_dynamic_var
 	conversion_cost_mil_to_civ_factor = IKA_economy_conversion_cost_mil_to_civ_factor_dynamic_var
-	industry_repair_factor = IKA_economy_industry_repair_factor_dynamic_var	#-0.9
-	production_speed_buildings_factor = IKA_economy_production_speed_buildings_factor_dynamic_var	#-0.3
-	industrial_capacity_factory = IKA_economy_industrial_capacity_factory_dynamic_var	#-0.3
-	industrial_capacity_dockyard = IKA_economy_industrial_capacity_dockyard_dynamic_var	#-0.3
+	industry_repair_factor = IKA_economy_industry_repair_factor_dynamic_var
+	production_speed_buildings_factor = IKA_economy_production_speed_buildings_factor_dynamic_var
+	industrial_capacity_factory = IKA_economy_industrial_capacity_factory_dynamic_var
+	industrial_capacity_dockyard = IKA_economy_industrial_capacity_dockyard_dynamic_var
 	production_speed_infrastructure_factor = IKA_economy_production_speed_infrastructure_factor_dynamic_var
 	production_speed_industrial_complex_factor = IKA_economy_production_speed_industrial_complex_factor_dynamic_var
 	production_speed_office_park_factor = IKA_economy_production_speed_office_park_factor_dynamic_var
@@ -96,4 +97,58 @@ IKA_backwoods_economy_dynamic = {
 	tax_personal_rate = IKA_economy_tax_personal_rate_dynamic_var
 	interest_rate = IKA_economy_interest_rate_dynamic_var
 	inflation_monthly_factor = IKA_economy_inflation_monthly_factor_dynamic_var
+}
+
+IKA_the_new_apostolic_reformation_dynamic = {
+	icon = GFX_idea_IKA_the_new_apostolic_reformation_dynamic
+	enable = {
+		tag = IKA
+	}
+	stability_factor = IKA_the_new_apostolic_reformation_stability_factor_dynamic_var
+	war_support_factor = IKA_the_new_apostolic_reformation_war_support_factor_dynamic_var
+	nationalist_drift =  IKA_the_new_apostolic_reformation_nationalist_drift_dynamic_var
+	political_advisor_cost_factor = IKA_the_new_apostolic_reformation_political_advisor_cost_factor_dynamic_var
+	academic_development_monthly = IKA_the_new_apostolic_reformation_academic_development_monthly_dynamic_var
+	recruitable_population_factor = IKA_the_new_apostolic_reformation_recruitable_population_factor_dynamic_var
+}
+
+IKA_christian_constitutionalism_dynamic = {
+	icon = GFX_idea_IKA_christian_constitutionalism_dynamic
+	enable = {
+		tag = IKA
+	}
+}
+
+IKA_the_one_true_church_dynamic = {
+	icon = GFX_idea_IKA_the_one_true_church_dynamic
+	enable = {
+		tag = IKA
+	}
+}
+
+IKA_union_of_church_and_state_dynamic = {
+	icon = GFX_idea_IKA_union_of_church_and_state_dynamic
+	enable = {
+		tag = IKA
+	}
+	political_power_gain = IKA_union_of_church_and_state_political_power_gain_dynamic_var
+	stability_factor = IKA_union_of_church_and_state_stability_factor_dynamic_var
+	nationalist_drift =  IKA_union_of_church_and_state_nationalist_drift_dynamic_var
+	compliance_growth = IKA_union_of_church_and_state_compliance_growth_dynamic_var
+	resistance_growth = IKA_union_of_church_and_state_resistance_growth_dynamic_var
+	poverty_development_monthly = IKA_union_of_church_and_state_poverty_development_monthly_dynamic_var
+	society_development_monthly = IKA_union_of_church_and_state_society_development_monthly_dynamic_var
+
+}
+
+IKA_church_education_dynamic = {
+	icon = GFX_idea_IKA_church_education_dynamic
+	enable = {
+		tag = IKA
+	}
+	political_power_gain = IKA_church_education_political_power_gain_dynamic_var
+	stability_factor = IKA_church_education_stability_factor_dynamic_var
+	research_speed_factor = IKA_church_education_research_speed_factor_dynamic_var
+	army_attack_factor = IKA_church_education_army_attack_factor_dynamic_var
+	nationalist_drift =  IKA_church_education_nationalist_drift_dynamic_var
 }
