@@ -136,7 +136,7 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_walls_of_jericho_idea
 				}
 			}
@@ -163,9 +163,6 @@ focus_tree = {
 		}
 		# Creates Guardians of the Faith
 		completion_reward = {
-			add_ideas = {
-				IKA_christian_moral_police
-			}
 			country_event = {
 				id = IKA.2
 			}
@@ -231,7 +228,7 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_valley_of_death_idea
 				}
 			}
@@ -261,7 +258,7 @@ focus_tree = {
 			add_army_experience = 25
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_we_shall_not_fear_idea
 				}
 			}
@@ -411,7 +408,7 @@ focus_tree = {
 		completion_reward = {
 			effect_tooltip = {
 				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
+					remove_idea = IKA_military_dummy_idea
 					add_idea = IKA_baptism_by_fire_idea
 				}
 			}
@@ -536,12 +533,18 @@ focus_tree = {
 			country_event = {
 				id = IKA.6
 			}
-			add_political_power = 100
-			add_manpower = -5000
-			effect_tooltip = {
-				swap_ideas = {
-					remove_idea = IKA_leaderless_resistance_dummy_idea
-					add_idea = IKA_cleansing_of_atlanta_idea
+			add_stability = 0.05
+			1017 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
 			}
 		}

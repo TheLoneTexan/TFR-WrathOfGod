@@ -1,0 +1,146 @@
+IKA_apostles_decision_category = {
+	IKA_establish_the_new_holy_government = {
+		icon = GFX_decision_IKA_establish_the_new_holy_government
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_the_apostles
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_promote_responsible_business = {
+		icon = GFX_decision_IKA_promote_responsible_business
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_the_apostles
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_democracy_the_false_god = {
+		icon = GFX_decision_IKA_democracy_the_false_god
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_expose_democracys_godless_origin
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_teach_the_new_apostolic_reformation = {
+		icon = GFX_decision_IKA_teach_the_new_apostolic_reformation
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_new_apostolic_reformation
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_revoke_citizenship_from_the_godless = {
+		icon = GFX_decision_IKA_revoke_citizenship_from_the_godless
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_punishment_for_the_wicked
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_the_lord_and_christ_are_supreme = {
+		icon = GFX_decision_IKA_the_lord_and_christ_are_supreme
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_integration_of_church_and_state
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_invite_the_apostles = {
+		icon = GFX_decision_IKA_invite_the_apostles
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_finding_the_apostles
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_restructure_womens_domestic_roles = {
+		icon = GFX_decision_IKA_restructure_womens_domestic_roles
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_true_womens_liberation
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	IKA_pass_the_blue_laws = {
+		icon = GFX_decision_IKA_pass_the_blue_laws
+		allowed = {
+			tag = IKA
+		}
+		visible = {
+			has_completed_focus = IKA_national_blue_law
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+}

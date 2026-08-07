@@ -1,0 +1,63 @@
+IKA_generic_decision_category = {
+	icon = GFX_decision_category_IKA_apostles_decision_category
+	visible_when_empty = yes
+	allowed = {
+		tag = IKA
+	}
+	priority = 5
+}
+IKA_first_set_decision_category = {
+	icon = GFX_decision_category_IKA_first_set_decision_category
+	visible_when_empty = yes
+	allowed = {
+		tag = IKA
+	}
+	visible = {
+		has_completed_focus = IKA_the_apostles
+	}
+	priority = 6
+}
+IKA_second_set_decision_category = {
+	icon = GFX_decision_category_IKA_second_set_decision_category
+	visible_when_empty = yes
+	allowed = {
+		tag = IKA
+	}
+	visible = {
+		has_completed_focus = IKA_the_apostles
+	}
+	priority = 7
+}
+IKA_apostles_decision_category = {
+	icon = GFX_decision_category_IKA_apostles_decision_category
+	visible_when_empty = yes
+	allowed = {
+		tag = IKA
+	}
+	visible = {
+		has_completed_focus = IKA_the_apostles
+	}
+	priority = 8
+}
+IKA_pilgrims_decision_category = {
+	icon = GFX_decision_category_IKA_pilgrims_decision_category
+	visible_when_empty = yes
+	allowed = {
+		tag = IKA
+	}
+	visible = {
+		has_completed_focus = IKA_the_pilgrims
+	}
+	priority = 8
+}
+IKA_redeemers_decision_category = {
+	icon = GFX_decision_category_IKA_redeemers_decision_category
+	visible_when_empty = yes
+	allowed = {
+		tag = IKA
+	}
+	visible = {
+		has_completed_focus = IKA_the_redeemers
+	}
+	priority = 8
+}
