@@ -210,6 +210,28 @@ ideas = {
 				command_power_gain = 0.05
 			}
 		}
+		IKA_a_faithful_army_idea = {
+			name = IKA_army_of_the_faithful
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = -0.1
+				army_breakthrough_factor = -0.1
+				army_org_factor = -0.15
+				recruitable_population_factor = 0.2
+			}
+		}
+		IKA_lessons_from_reds_idea = {
+			name = IKA_holy_militias
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				militia_attack = 0.1
+				militia_defense = 0.1
+			}
+		}
 		## New Apostle's Church Education Dynamic Modifier
 		IKA_church_education_dummy_idea = {
 			#Just Made For Tooltip, Dynamic Modifier is used instead
