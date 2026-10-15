@@ -210,11 +210,15 @@ ideas = {
 				command_power_gain = 0.05
 			}
 		}
-		IKA_a_faithful_army_idea = {
-			name = IKA_army_of_the_faithful
+		IKA_army_of_the_faithful_level1 = {
+			name = IKA_army_of_the_faithful_level1
+			traits = {
+				ZZZ_blank_idea_trait
+			}
 			allowed = {
 				always = yes
 			}
+			removal_cost = -1
 			modifier = {
 				army_attack_factor = -0.1
 				army_breakthrough_factor = -0.1
@@ -222,6 +226,40 @@ ideas = {
 				recruitable_population_factor = 0.2
 			}
 		}
+		IKA_army_of_the_faithful_level2 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.1
+				army_breakthrough_factor = -0.1
+				army_org_factor = -0.15
+				recruitable_population_factor = 0.22
+			}
+		}
+		IKA_army_of_the_faithful_level3 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.1
+				army_breakthrough_factor = -0.1
+				army_org_factor = -0.05
+				recruitable_population_factor = 0.22
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+			}
 		IKA_lessons_from_reds_idea = {
 			name = IKA_holy_militias
 			allowed = {
