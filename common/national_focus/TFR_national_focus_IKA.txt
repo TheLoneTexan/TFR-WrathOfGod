@@ -2280,7 +2280,7 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
-		x = -1
+		x = 0
 		y = 1
 		cost = 4
 		prerequisite = {
@@ -2300,15 +2300,15 @@ focus_tree = {
 	focus = {
 		id = IKA_appalachian_tactics
 		icon = GFX_focus_IKA_appalachian_tactics
-		relative_position_id = IKA_lessons_from_the_reds
+		relative_position_id = IKA_recruit_from_the_downtrodden
 		search_filters = {
 			FOCUS_FILTER_WAR_SUPPORT
 		}
-		x = 1
+		x = 0
 		y = 1
 		cost = 4
 		prerequisite = {
-			focus = IKA_lessons_from_the_reds
+			focus = IKA_recruit_from_the_downtrodden
 		}
 		completion_reward = {
 			swap_ideas = {
@@ -2319,4 +2319,54 @@ focus_tree = {
 					IKA_army_of_the_faithful_level3
 				}
 			}
+		}
+	}
+	focus = {
+		id = IKA_suffer_the_children
+		icon = GFX_focus_IKA_suffer_the_children
+		relative_position_id = IKA_appalachian_tactics
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_appalachian_tactics
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = {
+					IKA_army_of_the_faithful_level3
+				}
+				add_idea = {
+					IKA_army_of_the_faithful_level4
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_salvation_through_service
+		icon = GFX_focus_IKA_salvation_through_service
+		relative_position_id = IKA_suffer_the_children
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_suffer_the_children
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = {
+					IKA_army_of_the_faithful_level4
+				}
+				add_idea = {
+					IKA_army_of_the_faithful_level5
+				}
+			}
+		}
+	}
 }
