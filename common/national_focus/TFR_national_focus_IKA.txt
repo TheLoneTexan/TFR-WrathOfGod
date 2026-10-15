@@ -2282,4 +2282,41 @@ focus_tree = {
 		}
 		x = -1
 		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_lessons_from_the_reds
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = {
+					IKA_army_of_the_faithful_level1
+				}
+				add_idea = {
+					IKA_army_of_the_faithful_level2
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_appalachian_tactics
+		icon = GFX_focus_IKA_appalachian_tactics
+		relative_position_id = IKA_lessons_from_the_reds
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_lessons_from_the_reds
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = {
+					IKA_army_of_the_faithful_level2
+				}
+				add_idea = {
+					IKA_army_of_the_faithful_level3
+				}
+			}
 }
