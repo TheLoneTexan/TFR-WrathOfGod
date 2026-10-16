@@ -299,6 +299,26 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
+		IKA_army_of_the_faithful_level6 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				recruitable_population_factor = 0.27
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+				consumer_goods_factor = 0.05
+				field_hospital_trickleback = 0.2
+				infantry_max_strength_factor = 0.1
+			}
+		}
 		IKA_lessons_from_reds_idea = {
 			name = IKA_holy_militias
 			allowed = {
@@ -307,6 +327,20 @@ ideas = {
 			modifier = {
 				militia_attack = 0.1
 				militia_defense = 0.1
+			}
+		}
+		IKA_die_to_make_men_free = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifer = {
+				army_attack_factor = 0.1
+				army_breakthrough_factor = 0.1
 			}
 		}
 		## New Apostle's Church Education Dynamic Modifier
