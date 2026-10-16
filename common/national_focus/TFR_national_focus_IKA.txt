@@ -2253,7 +2253,7 @@ focus_tree = {
 			focus = IKA_army_of_the_sanctified
 		}
 		completion_reward = {
-			add_idea = IKA_a_faithful_army_idea
+			add_idea = IKA_army_of_the_faithful_level1
 		}
 	}
 	focus = {
@@ -2463,4 +2463,19 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = IKA_army_of_the_sanctified
+		icon = GFX_focus_IKA_army_of_the_sanctified
+		relative_position_id = IKA_assyria_at_the_gates
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 3
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_assyria_at_the_gates
+		}
+		completion_reward = {
+			add_idea
 }
