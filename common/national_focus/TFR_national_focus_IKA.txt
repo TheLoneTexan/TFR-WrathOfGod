@@ -2359,6 +2359,7 @@ focus_tree = {
 			focus = IKA_suffer_the_children
 		}
 		completion_reward = {
+			load_oob = IKA_salvation_auxiliaries_oob
 			swap_ideas = {
 				remove_idea = {
 					IKA_army_of_the_faithful_level4
@@ -2427,5 +2428,39 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_battlefield_nurses
 		}
-		
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = {
+					IKA_army_of_the_faithful_level6
+				}
+				add_idea = {
+					IKA_army_of_the_faithful_level7
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_davids_army
+		icon = GFX_focus_IKA_davids_army
+		relative_position_id = IKA_station_wagon_forts
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_station_wagon_forts
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = {
+					IKA_army_of_the_faithful_level7
+				}
+				add_idea = {
+					IKA_army_of_the_faithful_level8
+				}
+			}
+		}
+	}
 }
