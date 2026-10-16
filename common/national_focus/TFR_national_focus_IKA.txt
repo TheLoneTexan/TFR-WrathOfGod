@@ -2369,4 +2369,63 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = IKA_harness_the_christian_spirit
+		icon = GFX_focus_IKA_harness_the_christian_spirit
+		relative_position_id = IKA_salvation_through_service
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 1
+		y = 0
+		cost = 4
+		prerequisite = {
+			focus = IKA_suffer_the_children
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = IKA_die_to_make_men_free
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = IKA_battlefield_nurses
+		icon = GFX_focus_IKA_battlefield_nurses
+		relative_position_id = IKA_salvation_through_service
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_salvation_through_service
+			focus = IKA_harness_the_christian_spirit
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = {
+					IKA_army_of_the_faithful_level5
+				}
+				add_idea = {
+					IKA_army_of_the_faithful_level6
+				}
+			}
+		}
+	}
+	focus = {
+		id = IKA_station_wagon_forts
+		icon = GFX_focus_IKA_station_wagon_forts
+		relative_position_id = IKA_battlefield_nurses
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_battlefield_nurses
+		}
+		
 }
