@@ -319,6 +319,27 @@ ideas = {
 				infantry_max_strength_factor = 0.1
 			}
 		}
+		IKA_army_of_the_faithful_level7 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				recruitable_population_factor = 0.27
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+				consumer_goods_factor = 0.05
+				field_hospital_trickleback = 0.2
+				infantry_max_strength_factor = 0.1
+				production_speed_bunker_factor = 0.25
+			}
+		}
 		IKA_lessons_from_reds_idea = {
 			name = IKA_holy_militias
 			allowed = {
