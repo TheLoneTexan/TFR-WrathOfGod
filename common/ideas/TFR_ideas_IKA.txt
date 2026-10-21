@@ -36,6 +36,24 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
+		IKA_leaderless_resistance = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_attack_factor = -0.1
+				experience_gain_army_unit_factor = -0.2
+				army_org_factor = -0.2
+				planning_speed = -0.2
+				max_planning = -0.2
+			}
+		}
 		IKA_kill_RRR = {
 			picture = generic_christian_values
 			traits = {
@@ -208,6 +226,181 @@ ideas = {
 				experience_gain_factor = 0.05
 				army_org_factor = 0.05
 				command_power_gain = 0.05
+			}
+		}
+		IKA_army_of_the_faithful_level1 = {
+			name = IKA_army_of_the_faithful_level1
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.1
+				army_breakthrough_factor = -0.1
+				army_org_factor = -0.15
+				recruitable_population_factor = 0.2
+			}
+		}
+		IKA_army_of_the_faithful_level2 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.1
+				army_breakthrough_factor = -0.1
+				army_org_factor = -0.15
+				recruitable_population_factor = 0.22
+			}
+		}
+		IKA_army_of_the_faithful_level3 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.1
+				army_breakthrough_factor = -0.1
+				army_org_factor = -0.05
+				recruitable_population_factor = 0.22
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+			}
+		}
+		IKA_army_of_the_faithful_level4 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -0.05
+				army_breakthrough_factor = -0.05
+				army_org_factor = -0.05
+				recruitable_population_factor = 0.27
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+		IKA_army_of_the_faithful_level5 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				recruitable_population_factor = 0.27
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+		IKA_army_of_the_faithful_level6 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				recruitable_population_factor = 0.27
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+				consumer_goods_factor = 0.05
+				field_hospital_trickleback = 0.2
+				infantry_max_strength_factor = 0.1
+			}
+		}
+		IKA_army_of_the_faithful_level7 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				recruitable_population_factor = 0.27
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+				consumer_goods_factor = 0.05
+				field_hospital_trickleback = 0.2
+				infantry_max_strength_factor = 0.1
+				production_speed_bunker_factor = 0.25
+			}
+		}
+		IKA_army_of_the_faithful_level8 = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.15
+				recruitable_population_factor = 0.27
+				hills_attack = 0.1
+				hills_defense = 0.1
+				hills_movement = 0.2
+				consumer_goods_factor = 0.05
+				field_hospital_trickleback = 0.2
+				infantry_max_strength_factor = 0.1
+				production_speed_bunker_factor = 0.25
+			}
+		}
+		IKA_lessons_from_reds_idea = {
+			name = IKA_holy_militias
+			allowed = {
+				always = yes
+			}
+			modifier = {
+				militia_attack = 0.1
+				militia_defense = 0.1
+			}
+		}
+		IKA_die_to_make_men_free = {
+			picture = generic_christian_values
+			traits = {
+				ZZZ_blank_idea_trait
+			}
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifer = {
+				army_attack_factor = 0.1
+				army_breakthrough_factor = 0.1
 			}
 		}
 		## New Apostle's Church Education Dynamic Modifier
