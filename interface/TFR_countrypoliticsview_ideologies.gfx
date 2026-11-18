@@ -871,6 +871,11 @@
 		}
 		
 		spriteType = {
+			name = "GFX_ideology_national_conservativism_con"
+			texturefile = "gfx/interface/ideologies/national_conservativism_con.png"
+		}
+		
+		spriteType = {
 			name = "GFX_ideology_LIT_christian_conservatism"
 			texturefile = "gfx/interface/ideologies/conservative_baltic.png"
 		}
@@ -954,6 +959,11 @@
 			name = "GFX_ideology_JDL_ethno_nationalism"
 			texturefile = "gfx/interface/ideologies/ethno_nationalism_ISR.png"
 		}
+
+		spriteType = {
+			name = "GFX_ideology_SER_ethno_nationalism"
+			texturefile = "gfx/interface/ideologies/ethno_nationalism_SER.png"
+		}
 		
 		spriteType = {
 			name = "GFX_ideology_national_syndicalism"
@@ -1036,6 +1046,11 @@
 		}		
 		
 		spriteType = {
+			name = "GFX_ideology_national_conservativism_auth"
+			texturefile = "gfx/interface/ideologies/national_conservativism_auth.png"
+		}		
+		
+		spriteType = {
 			name = "GFX_ideology_USC_hybrid_regime"
 			texturefile = "gfx/interface/ideologies/hybrid_regime_USC.png"
 		}	
@@ -1054,6 +1069,11 @@
 			name = "GFX_ideology_ENG_hybrid_regime"
 			texturefile = "gfx/interface/ideologies/ultra_conservatism_ENG.png"
 		}
+
+		spriteType = {
+			name = "GFX_ideology_SER_hybrid_regime"
+			texturefile = "gfx/interface/ideologies/hybrid_regime_SER.png"
+		}		
 		
 		spriteType = {
 			name = "GFX_ideology_CAC_maoism" 
@@ -1388,7 +1408,7 @@
 		
 		spriteType = {
 			name = "GFX_ideology_HUN_oligarchist"
-			texturefile = "gfx/interface/ideologies/Oligarchist_HUN.png"
+			texturefile = "gfx/interface/ideologies/oligarchist_HUN.png"
 		}		
 		
 		spriteType = {
@@ -1398,7 +1418,7 @@
 		
 		spriteType = {
 			name = "##GFX_ideology_YEM_oligarchist"
-			texturefile = "gfx/interface/ideologies/oligarchist_YEM.png"
+			texturefile = "gfx/interface/ideologies/Oligarchist_YEM.png"
 		}		
 		
 		spriteType = {
@@ -1638,10 +1658,13 @@
 			texturefile = "gfx/interface/ideologies/right_populism_SOV.png"
 		}	
 		spriteType = {
-			name = "GFX_ideology_RAJ_right_populism"
+			name = "GFX_ideology_RAJ_national_conservativism_con"
 			texturefile = "gfx/interface/ideologies/right_populism_RAJ.png"
 		}
-		
+		spriteType = {
+			name = "GFX_ideology_RAJ_right_populism"
+			texturefile = "gfx/interface/ideologies/right_populism_RAJ.png"
+		}		
 		spriteType = {
 			name = "GFX_ideology_USC_right_populism"
 			texturefile = "gfx/interface/ideologies/right_populism_USC.png"
@@ -1651,7 +1674,15 @@
 			texturefile = "gfx/interface/ideologies/right_populism_PLD.png"
 		}
 		spriteType = {
+			name = "GFX_ideology_PLD_national_conservativism_con"
+			texturefile = "gfx/interface/ideologies/right_populism_PLD.png"
+		}
+		spriteType = {
 			name = "GFX_ideology_FRA_right_populism"
+			texturefile = "gfx/interface/ideologies/right_populism_FRA.png"
+		}
+		spriteType = {
+			name = "GFX_ideology_FRA_national_conservativism_con"
 			texturefile = "gfx/interface/ideologies/right_populism_FRA.png"
 		}
 		spriteType = {
@@ -1738,6 +1769,11 @@
 		}
 
 		spriteType = {
+			name = "GFX_ideology_SER_military_junta"
+			texturefile = "gfx/interface/ideologies/military_junta_SER.png"
+		}	
+
+		spriteType = {
 			name = "GFX_ideology_FAF_military_democracy"
 			texturefile = "gfx/interface/ideologies/military_democracy_FAF.png"
 		}
@@ -1790,6 +1826,11 @@
 		
 		spriteType = {
 			name = "GFX_ideology_ISR_right_populism"
+			texturefile = "gfx/interface/ideologies/right_populism_ISR.png"
+		}
+
+		spriteType = {
+			name = "GFX_ideology_ISR_national_conservativism_con"
 			texturefile = "gfx/interface/ideologies/right_populism_ISR.png"
 		}
 
@@ -1870,6 +1911,11 @@
 		spriteType = {
 			name = "GFX_ideology_TAJ_clerical_fascism"
 			texturefile = "gfx/interface/ideologies/clerical_fascism_TAJ.png"
+		}
+
+		spriteType = {
+			name = "GFX_ideology_SER_clerical_fascism"
+			texturefile = "gfx/interface/ideologies/clerical_fascism_SER.png"
 		}
 		
 		spriteType = {
@@ -2612,9 +2658,13 @@
 		spriteType = {
 			name = "GFX_ideology_ITA_centrist"
 			texturefile = "gfx/interface/ideologies/centrist_ITA.png"
-		}
+		} 
 		spriteType = {
 			name = "GFX_ideology_ITA_ultra_conservatism"
+			texturefile = "gfx/interface/ideologies/ultra_conservatism_ITA.png"
+		}	
+		spriteType = {
+			name = "GFX_ideology_ITA_national_conservativism_auth"
 			texturefile = "gfx/interface/ideologies/ultra_conservatism_ITA.png"
 		}	
 		#Left
@@ -2666,6 +2716,10 @@
 			texturefile = "gfx/interface/ideologies/ultra_conservatism_BRS.png"
 		}
 		spriteType = {
+			name = "GFX_ideology_BRS_national_conservativism_auth"
+			texturefile = "gfx/interface/ideologies/ultra_conservatism_BRS.png"
+		}
+		spriteType = {
 			name = "GFX_ideology_BRS_right_centrist"
 			texturefile = "gfx/interface/ideologies/classical_conservatism_GER.png"
 		}			
@@ -2684,6 +2738,6 @@
 		spriteType = {
 			name = "GFX_ideology_BRS_reformist_socialism"
 			texturefile = "gfx/interface/ideologies/reformist_socialism_BRS.png"
-		}
+		}	
 		#IKA	
 	}

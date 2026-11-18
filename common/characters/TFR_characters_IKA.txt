@@ -51,7 +51,7 @@ characters = {
 				large = "gfx/Leaders/IKA/TFR_IKA_steven_anderson.png"
 			}
 			army = {
-				large = "gfx/Leaders/IKA/IKA_steven_anderson_gen.png"
+				large = "gfx/Leaders/IKA/TFR_IKA_steven_anderson_gen.png"
 			}
 		}
 		country_leader = {

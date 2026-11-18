@@ -1,0 +1,4 @@
+﻿l_english:
+ # WoG: overrides base TFR USA_side_with_resistance_tooltip (localisation/english/TFR_country_localisation_USA_l_english.yml) so the Army of God (@IKA) shows in the side list.
+ # Moved here from localisation/TFR_country_localisation_USA_l_english.yml because keys in a replace/ folder always win over base.
+ USA_side_with_resistance_tooltip: "Side With §CBiden§!, for a return to normalcy!\nThis allows you to play: \n- @USB §Y[USB.GetName] (Biden)§!\n- @APA §Y[APA.GetName]§!\n- @PTF §Y[PTF.GetName]§!\n- @NSM §Y[NSM.GetName]§!\n- @ATW §Y[ATW.GetName]§!\n- @IKA §Y[IKA.GetName]§!\n The §Y$party_popularity_dynamic_modifier$§! modifier will be mapped to the $social_liberal_color_name$ Party"

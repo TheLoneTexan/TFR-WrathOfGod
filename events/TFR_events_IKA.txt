@@ -15,6 +15,8 @@ country_event = {
     id = IKA.2
     title = IKA.2.t
     desc = IKA.2.d
+    # Picture: the Guardians of the Faith focus icon (GFX_focus_IKA_guardians_of_the_faith), enlarged
+    picture = GFX_IKA_guardians_of_the_faith
 
     is_triggered_only = yes
     option = {
@@ -26,6 +28,8 @@ country_event = {
     id = IKA.3
     title = IKA.3.t
     desc = IKA.3.d
+    # Picture: the Open the Conversion Camps focus icon (GFX_focus_IKA_open_the_conversion_camps), enlarged
+    picture = GFX_IKA_conversion_camps
 
     is_triggered_only = yes
     option = {
@@ -125,6 +129,8 @@ country_event = {
     id = IKA.11
     title = IKA.11.t
     desc = IKA.11.d
+    # Picture: the Georgia World Congress Center at night, color-split filter
+    picture = GFX_IKA_holy_council_convenes
 
     is_triggered_only = yes
     option = {
@@ -177,6 +183,8 @@ country_event = {
     id = IKA.12
     title = IKA.12.t
     desc = IKA.12.d
+    # Picture: Holy Trinity painting, color-split filter
+    picture = GFX_IKA_godly_society
     
     is_triggered_only = yes
     option = {
@@ -229,6 +237,8 @@ country_event = {
     id = IKA.13
     title = IKA.13.t
     desc = IKA.13.d
+    # Picture: a ballot box, color-split filter
+    picture = GFX_IKA_elections_or_not
     
     is_triggered_only = yes
     option = {
@@ -517,10 +527,13 @@ country_event = {
     }
  }
 
+ # An Assembly of Apostles (focus IKA_finding_the_apostles / doc: Gather the Apostles)
  country_event = {
     id = IKA.25
     title = IKA.25.t
     desc = IKA.25.d
+    # Photo: Jvergis, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:WCC_2nd_World_Assembly_Evanston_1954.jpg
+    picture = GFX_IKA_assembly_of_apostles
 
     is_triggered_only = yes
     option = {
@@ -548,10 +561,13 @@ country_event = {
     }
  }
 
+ # Security Report on Underground Abortionist Groups (focus IKA_execute_abortionists)
  country_event = {
     id = IKA.27
     title = IKA.27.t
     desc = IKA.27.d
+    # Photo: Pete Souza, Public domain, https://commons.wikimedia.org/wiki/File:Classified_document_on_Resolute_desk.jpg
+    picture = GFX_IKA_security_report_abortionists
 
     is_triggered_only = yes
     option = {
@@ -559,10 +575,13 @@ country_event = {
     }
  }
 
+ # A Pink Life (focus IKA_destroy_the_gay_agenda)
  country_event = {
     id = IKA.28
     title = IKA.28.t
     desc = IKA.28.d
+    # Photo: Jason Riedy from East Point, GA, USA, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), https://commons.wikimedia.org/wiki/File:Atlanta_Pride_2009_parade_-_St._Pete%27s_Righteously_Outrageous_Twirling_Corps.jpg
+    picture = GFX_IKA_a_pink_life
 
     is_triggered_only = yes
     option = {
@@ -570,10 +589,13 @@ country_event = {
     }
  }
 
+ # Official Launch of the Apostolic News Network (focus IKA_launch_the_apostolic_news_network)
  country_event = {
     id = IKA.29
     title = IKA.29.t
     desc = IKA.29.d
+    # Photo: Wittylama, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0), https://commons.wikimedia.org/wiki/File:Al_Jazeera_English_Newsroom.jpg
+    picture = GFX_IKA_apostolic_news_network
 
     is_triggered_only = yes
     option = {
@@ -581,10 +603,13 @@ country_event = {
     }
  }
 
+ # Illegal Contraband Confiscated (focus IKA_ban_satanic_entertainment / doc: Ban Sinful Entertainment)
  country_event = {
     id = IKA.30
     title = IKA.30.t
     desc = IKA.30.d
+    # Photo: shankar s., CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), https://commons.wikimedia.org/wiki/File:Pirated_dvds.jpg
+    picture = GFX_IKA_illegal_contraband
 
     is_triggered_only = yes
     option = {

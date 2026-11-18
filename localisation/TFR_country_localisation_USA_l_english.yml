@@ -12,7 +12,8 @@
  usa.105.i: "Death To The State!"
  usa.105.j: "¡Los Chicanos se Unen!"
  usa.105.k: "Cascadia Lives!"
- usa.105.l: "Save America from Satan's Control!"
+ usa.105.l: "God's Judgment is at Hand"
+ # WoG: tooltip for the usa.105.l side-selection option (same format as base play_NSM_tooltip/play_ATW_tooltip; text from USA_aog_path_tt)
+ play_IKA_tooltip: "§YArmy of God§!\n---------------\n\n\n\n\n£GFX_IKA_path_banner\n\n\n\n\n\n§gSave America from Satan's Control!\n\nOnward, Christian soldiers, marching as to war,\nWith the cross of Jesus going on before!\nChrist, the royal Master, leads against the foe;\nForward into battle, see His banner go!§!\n\nPlay as §Y[IKA.GetNameDef]§!, when the §RCivil War§! begins!"
 
  USA_side_with_trump_tooltip: "Side With §RTrump§!, to make America great again!\nThis allows you to play: \n- @USC §Y[USC.GetName] (Trump)§!"
- USA_side_with_resistance_tooltip: "Side With §CBiden§!, for a return to normalcy!\nThis allows you to play: \n- @USB §Y[USB.GetName] (Biden)§!\n- @APA §Y[APA.GetName]§!\n- @PTF §Y[PTF.GetName]§!\n- @NSM §Y[NSM.GetName]§!\n- @ATW §Y[ATW.GetName]§!\n- @IKA §Y[IKA.GetName]§!\n The §Y$party_popularity_dynamic_modifier$§! modifier will be mapped to the $social_liberal_color_name$ Party"

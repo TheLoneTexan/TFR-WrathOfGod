@@ -2576,7 +2576,7 @@ country_event = {
 		}
 	}
 	option = {
-		#IKA
+		#IKA - Army of God (WoG). Same trigger as the other resistance-side options (NSM/ATW/PTF); tag switch is in USA_civil_war_outbreak_effect
 		name = usa.105.l
 		trigger = {
 			is_ai = no
@@ -2587,6 +2587,18 @@ country_event = {
 			set_global_flag = play_IKA_global
 		}
 	}
+	# option = {
+	# 	#GMA
+	# 	name = usa.105.i
+	# 	trigger = {
+	# 		is_ai = no
+	# 		USA_sided_with_resistance_trigger = yes
+	# 	}
+	# 	custom_effect_tooltip = play_GMA_tooltip
+	# 	hidden_effect = {
+	# 		set_global_flag = play_GMA_global
+	# 	}
+	# }
 }
 
 #Washington and other states appear

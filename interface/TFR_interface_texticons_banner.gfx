@@ -229,6 +229,31 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_PROXY_libyan_cw_cat_banner"
+		texturefile = "gfx/texticons/banners/decisions/PROXY_libyan_cw_cat_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PROXY_maghreb_war_cat_banner"
+		texturefile = "gfx/texticons/banners/decisions/PROXY_maghreb_war_cat_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PROXY_saudi_cw_cat_banner"
+		texturefile = "gfx/texticons/banners/decisions/PROXY_saudi_cw_cat_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PROXY_colombian_cw_banner"
+		texturefile = "gfx/texticons/banners/decisions/PROXY_colombian_cw_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_PROXY_3aw_banner"
+		texturefile = "gfx/texticons/banners/decisions/PROXY_3aw_banner.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_USA_red_resistance_banner"
 		texturefile = "gfx/texticons/banners/USA_red_resistance_banner.png"
 		legacy_lazy_load = no
@@ -1069,6 +1094,11 @@ spriteTypes = {
 		name = "GFX_ideology_populist_sovietism_banner"
 		texturefile = "gfx/texticons/banners/ideology/ideology_populist_sovietism_banner.png"
 		legacy_lazy_load = no
+	}	
+	spriteType = {
+		name = "GFX_ideology_naturalized_derzhavism_banner"
+		texturefile = "gfx/texticons/banners/ideology/ideology_naturalized_derzhavism.png"
+		legacy_lazy_load = no
 	}		
 	spriteType = {
 		name = "GFX_ideology_ideology_fascist_populism_banner"
@@ -1561,6 +1591,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_Ideology_National_Conservatism"
+		texturefile = "gfx/texticons/banners/ideology/Ideology_National_Conservatism.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_Ideology_Right_Centrism"
 		texturefile = "gfx/texticons/banners/ideology/Ideology_Right_Centrism.png"
 		legacy_lazy_load = no
@@ -1683,6 +1718,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_Ideology_update_banner_kaliningrad_banner"
 		texturefile = "gfx/texticons/banners/update_banner_kaliningrad.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_update_brusselles_effect_banner"
+		texturefile = "gfx/texticons/banners/update_banner_brusselles_effect.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -2908,6 +2948,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/banners/GER/SOV_NATO_war_category.png"
 		legacy_lazy_load = no
 	}
+	spriteType = { 
+		name = "GFX_ITA_sugli_alberi_le_foglie_category_banner"
+		texturefile = "gfx/texticons/banners/ITA/ITA_sugli_alberi_le_foglie.png"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_SOV_democracy_post_alikhanov"
 		texturefile = "gfx/texticons/banners/SOV_democracy_post_alikhanov.png"
@@ -2924,10 +2969,141 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_GER_sustainable_economic_choices_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_sustainable_economic_choices.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_shutdown_industries_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_shutdown_industries.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_inclusive_economic_choices_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_inclusive_economic_choices.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_biorefineries_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_biorefineries.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_green_grids_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_green_grids.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_tesla_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_tesla.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_electrics_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_general_electric.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_intel_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_intel.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_microsoft_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_microsoft.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_raytheon_technologies_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_raytheon_technologies.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GER_northrop_grumman_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_northrop_grumman.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_lockheed_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_lockheed_martin.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_dynamics_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_general_dynamics.png"
+		legacy_lazy_load = no 
+	}
+	spriteType = {
+		name = "GFX_GER_EUTC_negotiate_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_EUTC_negotiate.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_Farmers_negotiate_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_Farmers_negotiate.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_small_negotiate_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_small_negotiate.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_families_negotiate_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_family_negotiate.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_corpos_negotiate_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_corpos_negotiate.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_carbon_tax_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_carbon_tax.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_main_battle_tank_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_main_battle_tank.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_green_batteries_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_green_batteries.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_fivezero_industry_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_fivezero_industry.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_digital_euro_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_digital_euro.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_green_decisions_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_green_decisions.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_blue_decisions_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_blue_decisions.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_GER_rearm_europe_pr"
+		texturefile = "gfx/texticons/banners/GER/Economy/GER_rearm_europe.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_GER_anti_modernist_revolution_pr"
 		texturefile = "gfx/texticons/banners/GER/GER_anti_modernist_revolution.png"
 		legacy_lazy_load = no
 	}
+
 	spriteType = {
 		name = "GFX_GER_our_beautiful_liberty"
 		texturefile = "gfx/texticons/banners/GER/GER_Our_Beautiful_Liberty.png"
@@ -4141,7 +4317,7 @@ spriteTypes = {
 	}	
 		spriteType = {
 		name = "GFX_IKA_path_banner"
-		texturefile = "gfx/texticons/banners/IKa_path_banner.png"
+		texturefile = "gfx/texticons/banners/IKA_path_banner.png"
 		legacy_lazy_load = no
 	}	
 	spriteType = {

@@ -1,0 +1,116 @@
+# Army of God (IKA) flavor event pictures - Wrath of God
+# VHS-filtered 587x360 edits of the photos credited below (Wikimedia Commons).
+# Images under CC BY-SA stay under the same license as modified works.
+spriteTypes = {
+	# IKA.31 - Photo: Artur Pawlowski, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0), https://commons.wikimedia.org/wiki/File:Calgary_Homeless_Man_(2014).jpg
+	SpriteType = {
+		name = "GFX_IKA_jesus_loves_you"
+		texturefile = "gfx/event_pictures/IKA_jesus_loves_you.dds"
+	}
+	# IKA.25 - Photo: Jvergis, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:WCC_2nd_World_Assembly_Evanston_1954.jpg
+	SpriteType = {
+		name = "GFX_IKA_assembly_of_apostles"
+		texturefile = "gfx/event_pictures/IKA_assembly_of_apostles.dds"
+	}
+	# IKA.32 - Photo: JJonahJackalope, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:North_Avenue_Presbyterian.jpg
+	SpriteType = {
+		name = "GFX_IKA_church_report_new_dawn"
+		texturefile = "gfx/event_pictures/IKA_church_report_new_dawn.dds"
+	}
+	# IKA.29 - Photo: Wittylama, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0), https://commons.wikimedia.org/wiki/File:Al_Jazeera_English_Newsroom.jpg
+	SpriteType = {
+		name = "GFX_IKA_apostolic_news_network"
+		texturefile = "gfx/event_pictures/IKA_apostolic_news_network.dds"
+	}
+	# IKA.30 - Photo: shankar s., CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), https://commons.wikimedia.org/wiki/File:Pirated_dvds.jpg
+	SpriteType = {
+		name = "GFX_IKA_illegal_contraband"
+		texturefile = "gfx/event_pictures/IKA_illegal_contraband.dds"
+	}
+	# IKA.27 - Photo: Pete Souza, Public domain, https://commons.wikimedia.org/wiki/File:Classified_document_on_Resolute_desk.jpg
+	SpriteType = {
+		name = "GFX_IKA_security_report_abortionists"
+		texturefile = "gfx/event_pictures/IKA_security_report_abortionists.dds"
+	}
+	# IKA.28 - Photo: Jason Riedy from East Point, GA, USA, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), https://commons.wikimedia.org/wiki/File:Atlanta_Pride_2009_parade_-_St._Pete%27s_Righteously_Outrageous_Twirling_Corps.jpg
+	SpriteType = {
+		name = "GFX_IKA_a_pink_life"
+		texturefile = "gfx/event_pictures/IKA_a_pink_life.dds"
+	}
+	# IKA.33 - Photo: Deborah Amel Parks, Public domain, https://commons.wikimedia.org/wiki/File:SECOND_GRADERS_PLEDGE_ALLEGIANCE_IN_ROCKPORT_ELEMENTARY_SCHOOL_-_NARA_-_548243.jpg
+	SpriteType = {
+		name = "GFX_IKA_new_american_school_curriculum"
+		texturefile = "gfx/event_pictures/IKA_new_american_school_curriculum.dds"
+	}
+	# IKA.34 - Photo: JJonahJackalope, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:Al-Farooq_Masjid,_Atlanta_3.jpg
+	SpriteType = {
+		name = "GFX_IKA_muslim_in_christian_america"
+		texturefile = "gfx/event_pictures/IKA_muslim_in_christian_america.dds"
+	}
+	# IKA.35 - Photo: Fibonacci Blue, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), https://commons.wikimedia.org/wiki/File:Minnesota_Anti_Gay_Marriage_Amendment_Protests.jpg
+	SpriteType = {
+		name = "GFX_IKA_homosexuals_and_american_govt"
+		texturefile = "gfx/event_pictures/IKA_homosexuals_and_american_govt.dds"
+	}
+	# IKA.36 - Photo: freddthompson, CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0), https://commons.wikimedia.org/wiki/File:Jeri_is_interviewed_by_David_Brody_of_CBN_(Christian_Broadcasting_Network)_(2122916246).jpg
+	SpriteType = {
+		name = "GFX_IKA_cbn_official_program"
+		texturefile = "gfx/event_pictures/IKA_cbn_official_program.dds"
+	}
+	# IKA.37 - Photo: The original uploader was ToBeDaniel at Italian Wikipedia., CC BY 3.0 (https://creativecommons.org/licenses/by/3.0), https://commons.wikimedia.org/wiki/File:Lakewood_worship.jpg
+	SpriteType = {
+		name = "GFX_IKA_gathering_of_american_christians"
+		texturefile = "gfx/event_pictures/IKA_gathering_of_american_christians.dds"
+	}
+	# IKA.38 - Photo: Kaihsu, CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/), https://commons.wikimedia.org/wiki/File:XianFlag.jpg
+	SpriteType = {
+		name = "GFX_IKA_the_patriot_church"
+		texturefile = "gfx/event_pictures/IKA_the_patriot_church.dds"
+	}
+	# IKA.39 - Photo: Office of the Attorney General of Texas (photographer unknown; PD-author per Commons), Public domain, https://commons.wikimedia.org/wiki/File:TenCommandmentsAustinStateCapitol.jpg
+	SpriteType = {
+		name = "GFX_IKA_beginnings_of_a_holy_kingdom"
+		texturefile = "gfx/event_pictures/IKA_beginnings_of_a_holy_kingdom.dds"
+	}
+	# IKA.40 - Photo: Francis Helminski, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:S95CrucifixCourtroomNuremberg.jpg
+	SpriteType = {
+		name = "GFX_IKA_andersons_justice"
+		texturefile = "gfx/event_pictures/IKA_andersons_justice.dds"
+	}
+	# IKA.41 - Photo: Damian B Oh, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:Lenco_BearCat_Police_van_black_(1).jpg
+	SpriteType = {
+		name = "GFX_IKA_attacks_against_unbelievers"
+		texturefile = "gfx/event_pictures/IKA_attacks_against_unbelievers.dds"
+	}
+	# IKA.42 - Photo: Joel Kowsky, Public domain, https://commons.wikimedia.org/wiki/File:%27A_Beautiful_Planet%27_World_Premiere_(NHQ201604160018).jpg
+	SpriteType = {
+		name = "GFX_IKA_americas_redemption_documentary"
+		texturefile = "gfx/event_pictures/IKA_americas_redemption_documentary.dds"
+	}
+	# IKA.2 - Guardians of the Faith focus icon, enlarged onto a blurred copy of itself (no photo)
+	SpriteType = {
+		name = "GFX_IKA_guardians_of_the_faith"
+		texturefile = "gfx/event_pictures/IKA_guardians_of_the_faith.dds"
+	}
+	# IKA.3 - Open the Conversion Camps focus icon, enlarged onto a blurred copy of itself (no photo)
+	SpriteType = {
+		name = "GFX_IKA_conversion_camps"
+		texturefile = "gfx/event_pictures/IKA_conversion_camps.dds"
+	}
+	# IKA.11 - Picture: the Georgia World Congress Center at night, color-split filter
+	SpriteType = {
+		name = "GFX_IKA_holy_council_convenes"
+		texturefile = "gfx/event_pictures/IKA_holy_council_convenes.dds"
+	}
+	# IKA.12 - Picture: Holy Trinity painting, color-split filter
+	SpriteType = {
+		name = "GFX_IKA_godly_society"
+		texturefile = "gfx/event_pictures/IKA_godly_society.dds"
+	}
+	# IKA.13 - Picture: a ballot box, color-split filter
+	SpriteType = {
+		name = "GFX_IKA_elections_or_not"
+		texturefile = "gfx/event_pictures/IKA_elections_or_not.dds"
+	}
+
+}

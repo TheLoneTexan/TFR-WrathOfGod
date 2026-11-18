@@ -1,0 +1,169 @@
+add_namespace = IKA
+
+# Jesus Loves You (focus: Recruit from the Downtrodden)
+country_event = {
+    id = IKA.31
+    title = IKA.31.t
+    desc = IKA.31.d
+    # Photo: Artur Pawlowski, CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0), https://commons.wikimedia.org/wiki/File:Calgary_Homeless_Man_(2014).jpg
+    picture = GFX_IKA_jesus_loves_you
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.31.a
+    }
+}
+
+# Church Report from New Dawn Ministries (focus: Seize Heretical Churches)
+country_event = {
+    id = IKA.32
+    title = IKA.32.t
+    desc = IKA.32.d
+    # Photo: JJonahJackalope, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:North_Avenue_Presbyterian.jpg
+    picture = GFX_IKA_church_report_new_dawn
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.32.a
+    }
+}
+
+# The New American School Curriculum (focus: Patriotic and Holy Curriculum)
+country_event = {
+    id = IKA.33
+    title = IKA.33.t
+    desc = IKA.33.d
+    # Photo: Deborah Amel Parks, Public domain, https://commons.wikimedia.org/wiki/File:SECOND_GRADERS_PLEDGE_ALLEGIANCE_IN_ROCKPORT_ELEMENTARY_SCHOOL_-_NARA_-_548243.jpg
+    picture = GFX_IKA_new_american_school_curriculum
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.33.a
+    }
+}
+
+# A Muslim in Christian America (focus: Fight Against Islam)
+country_event = {
+    id = IKA.34
+    title = IKA.34.t
+    desc = IKA.34.d
+    # Photo: JJonahJackalope, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:Al-Farooq_Masjid,_Atlanta_3.jpg
+    picture = GFX_IKA_muslim_in_christian_america
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.34.a
+    }
+}
+
+# Homosexuals and the American Government (focus: Fight Against Sodomy)
+country_event = {
+    id = IKA.35
+    title = IKA.35.t
+    desc = IKA.35.d
+    # Photo: Fibonacci Blue, CC BY 2.0 (https://creativecommons.org/licenses/by/2.0), https://commons.wikimedia.org/wiki/File:Minnesota_Anti_Gay_Marriage_Amendment_Protests.jpg
+    picture = GFX_IKA_homosexuals_and_american_govt
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.35.a
+    }
+}
+
+# Official Program from the Christian Broadcasting Network (focus: Nationalize CBN)
+country_event = {
+    id = IKA.36
+    title = IKA.36.t
+    desc = IKA.36.d
+    # Photo: freddthompson, CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0), https://commons.wikimedia.org/wiki/File:Jeri_is_interviewed_by_David_Brody_of_CBN_(Christian_Broadcasting_Network)_(2122916246).jpg
+    picture = GFX_IKA_cbn_official_program
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.36.a
+    }
+}
+
+# A Gathering of American Christians (focus: Unite American Christendom)
+country_event = {
+    id = IKA.37
+    title = IKA.37.t
+    desc = IKA.37.d
+    # Photo: The original uploader was ToBeDaniel at Italian Wikipedia., CC BY 3.0 (https://creativecommons.org/licenses/by/3.0), https://commons.wikimedia.org/wiki/File:Lakewood_worship.jpg
+    picture = GFX_IKA_gathering_of_american_christians
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.37.a
+    }
+}
+
+# The Patriot Church (focus: Unite American Christendom)
+country_event = {
+    id = IKA.38
+    title = IKA.38.t
+    desc = IKA.38.d
+    # Photo: Kaihsu, CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/), https://commons.wikimedia.org/wiki/File:XianFlag.jpg
+    picture = GFX_IKA_the_patriot_church
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.38.a
+    }
+}
+
+# The Beginnings of a Holy Kingdom (focus: The Redemption Government)
+country_event = {
+    id = IKA.39
+    title = IKA.39.t
+    desc = IKA.39.d
+    # Photo: Office of the Attorney General of Texas (photographer unknown; PD-author per Commons), Public domain, https://commons.wikimedia.org/wiki/File:TenCommandmentsAustinStateCapitol.jpg
+    picture = GFX_IKA_beginnings_of_a_holy_kingdom
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.39.a
+    }
+}
+
+# Anderson’s Justice (focus: Biblical Courts)
+country_event = {
+    id = IKA.40
+    title = IKA.40.t
+    desc = IKA.40.d
+    # Photo: Francis Helminski, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:S95CrucifixCourtroomNuremberg.jpg
+    picture = GFX_IKA_andersons_justice
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.40.a
+    }
+}
+
+# Attacks Against Unbelievers (focus: Found the Enforcers)
+country_event = {
+    id = IKA.41
+    title = IKA.41.t
+    desc = IKA.41.d
+    # Photo: Damian B Oh, CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0), https://commons.wikimedia.org/wiki/File:Lenco_BearCat_Police_van_black_(1).jpg
+    picture = GFX_IKA_attacks_against_unbelievers
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.41.a
+    }
+}
+
+# New Documentary Released: ‘America’s Redemption’ (focus: Church Programs on All Stations)
+country_event = {
+    id = IKA.42
+    title = IKA.42.t
+    desc = IKA.42.d
+    # Photo: Joel Kowsky, Public domain, https://commons.wikimedia.org/wiki/File:%27A_Beautiful_Planet%27_World_Premiere_(NHQ201604160018).jpg
+    picture = GFX_IKA_americas_redemption_documentary
+
+    is_triggered_only = yes
+    option = {
+        name = IKA.42.a
+    }
+}

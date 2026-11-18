@@ -741,6 +741,125 @@ focus_tree = {
 			}
 		}
 	}
+	#Pilgrims path focuses (added to trigger flavor events)
+	# Added for Ficboy: fires flavor event(s) IKA.33 (The New American School Curriculum). No rewards specified in master doc.
+	focus = {
+		id = IKA_patriotic_and_holy_curriculum
+		icon = GFX_focus_IKA_patriotic_and_holy_curriculum
+		relative_position_id = IKA_the_pilgrims
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -4
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_pilgrims
+		}
+		allow_branch = {
+			has_country_flag = IKA_shea_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.33
+			}
+		}
+	}
+	# Added for Ficboy: fires flavor event(s) IKA.34 (A Muslim in Christian America). No rewards specified in master doc.
+	focus = {
+		id = IKA_fight_against_islam
+		icon = GFX_focus_IKA_fight_against_islam
+		relative_position_id = IKA_the_pilgrims
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_pilgrims
+		}
+		allow_branch = {
+			has_country_flag = IKA_shea_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.34
+			}
+		}
+	}
+	# Added for Ficboy: fires flavor event(s) IKA.35 (Homosexuals and the American Government). No rewards specified in master doc.
+	focus = {
+		id = IKA_fight_against_sodomy
+		icon = GFX_focus_IKA_fight_against_sodomy
+		relative_position_id = IKA_the_pilgrims
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 0
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_pilgrims
+		}
+		allow_branch = {
+			has_country_flag = IKA_shea_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.35
+			}
+		}
+	}
+	# Added for Ficboy: fires flavor event(s) IKA.36 (Official Program from the Christian Broadcasting Network). No rewards specified in master doc.
+	focus = {
+		id = IKA_nationalize_cbn
+		icon = GFX_focus_IKA_nationalize_cbn
+		relative_position_id = IKA_the_pilgrims
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 2
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_pilgrims
+		}
+		allow_branch = {
+			has_country_flag = IKA_shea_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.36
+			}
+		}
+	}
+	# Added for Ficboy: fires flavor event(s) IKA.37, IKA.38 (A Gathering of American Christians, then The Patriot Church). No rewards specified in master doc.
+	focus = {
+		id = IKA_unite_american_christendom
+		icon = GFX_focus_IKA_unite_american_christendom
+		relative_position_id = IKA_the_pilgrims
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 4
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_pilgrims
+		}
+		allow_branch = {
+			has_country_flag = IKA_shea_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.37
+			}
+			country_event = {
+				id = IKA.38
+			}
+		}
+	}
 	#New Apostles Focus Tree
 	focus = {
 		id = IKA_the_apostles
@@ -1254,6 +1373,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_stability = 0.05
+			# Flavor event: Church Report from New Dawn Ministries
+			country_event = {
+				id = IKA.32
+			}
 		}
 	}
 	focus = {
@@ -1748,6 +1871,99 @@ focus_tree = {
 			}
 		}
 	}
+	#Redeemers path focuses (added to trigger flavor events)
+	# Added for Ficboy: fires flavor event(s) IKA.39 (The Beginnings of a Holy Kingdom). No rewards specified in master doc.
+	focus = {
+		id = IKA_the_redemption_government
+		icon = GFX_focus_IKA_the_redemption_government
+		relative_position_id = IKA_the_redeemers
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -3
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_redeemers
+		}
+		allow_branch = {
+			has_country_flag = IKA_anderson_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.39
+			}
+		}
+	}
+	# Added for Ficboy: fires flavor event(s) IKA.40 (Anderson's Justice). No rewards specified in master doc.
+	focus = {
+		id = IKA_biblical_courts
+		icon = GFX_focus_IKA_biblical_courts
+		relative_position_id = IKA_the_redeemers
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = -1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_redeemers
+		}
+		allow_branch = {
+			has_country_flag = IKA_anderson_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.40
+			}
+		}
+	}
+	# Added for Ficboy: fires flavor event(s) IKA.41 (Attacks Against Unbelievers). No rewards specified in master doc.
+	focus = {
+		id = IKA_found_the_enforcers
+		icon = GFX_focus_IKA_found_the_enforcers
+		relative_position_id = IKA_the_redeemers
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 1
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_redeemers
+		}
+		allow_branch = {
+			has_country_flag = IKA_anderson_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.41
+			}
+		}
+	}
+	# Added for Ficboy: fires flavor event(s) IKA.42 (New Documentary Released: America's Redemption). No rewards specified in master doc.
+	focus = {
+		id = IKA_church_programs_on_all_stations
+		icon = GFX_focus_IKA_church_programs_on_all_stations
+		relative_position_id = IKA_the_redeemers
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		x = 3
+		y = 1
+		cost = 4
+		prerequisite = {
+			focus = IKA_the_redeemers
+		}
+		allow_branch = {
+			has_country_flag = IKA_anderson_elected
+		}
+		completion_reward = {
+			country_event = {
+				id = IKA.42
+			}
+		}
+	}
 	#Economy Focus Tree
 	focus = {
 		id = IKA_a_holy_economy
@@ -2116,7 +2332,7 @@ focus_tree = {
 		y = 1
 		cost = 4
 		prerequisite = {
-				focus = IKA_blessed_are_the__meek
+				focus = IKA_blessed_are_the_meek
 		}
 		prerequisite = {
 				focus = IKA_blessed_are_the_poor
@@ -2294,6 +2510,10 @@ focus_tree = {
 				add_idea = {
 					IKA_army_of_the_faithful_level2
 				}
+			}
+			# Flavor event: Jesus Loves You
+			country_event = {
+				id = IKA.31
 			}
 		}
 	}
@@ -2476,6 +2696,16 @@ focus_tree = {
 		prerequisite = {
 			focus = IKA_assyria_at_the_gates
 		}
+		mutually_exclusive = {
+			focus = IKA_army_of_the_faithful
+		}
 		completion_reward = {
-			add_idea
+			# FIX: the upstream file was cut off here at a bare "add_idea" with no idea name and
+			# no closing braces, which broke parsing of the whole tree.
+			# No "Army of the Sanctified" idea exists in common/ideas/TFR_ideas_IKA.txt, the
+			# master doc, or the repo history, so the reward is left empty for now.
+			# TODO: define the Army of the Sanctified idea(s) and add it here, e.g.
+			# add_idea = IKA_army_of_the_sanctified_level1
+		}
+	}
 }

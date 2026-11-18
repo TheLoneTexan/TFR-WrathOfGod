@@ -1,0 +1,96 @@
+spriteTypes = {
+	# Army of God (IKA) focus icons - Wrath of God
+	# Added Nov 14, 2026: the repo shipped these .dds files but no sprite definitions, so no focus icon showed.
+	SpriteType = {
+		name = "GFX_focus_IKA_babylon_has_fallen"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_babylon_has_fallen.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_ban_prenatal_infanticide"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_ban_prenatal_infanticide.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_baptism_by_fire"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_baptism_by_fire.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_chariots_of_iron"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_chariots_of_iron.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_cleansing_of_atlanta"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_cleansing_of_atlanta.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_equal_under_god_not_man"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_equal_under_god_not_man.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_finding_the_faithful"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_finding_the_faithful.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_god_hate_gays"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_god_hate_gays.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_guardians_of_the_faith"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_guardians_of_the_faith.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_holy_minutemen"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_holy_minutemen.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_new_dawn_ministries"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_new_dawn_ministries.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_open_the_conversion_camps"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_open_the_conversion_camps.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_rejecting_satan"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_rejecting_satan.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_servants_of_mammon"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_servants_of_mammon.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_servants_of_molech"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_servants_of_molech.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_show_them_his_truth"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_show_them_his_truth.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_the_greater_evil"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_the_greater_evil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_the_red_devil"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_the_red_devil.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_the_servants_of_babylon"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_the_servants_of_babylon.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_the_seventh_seal"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_the_seventh_seal.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_valley_of_death"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_valley_of_death.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_walls_of_jericho"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_walls_of_jericho.dds"
+	}
+	SpriteType = {
+		name = "GFX_focus_IKA_we_shall_not_fear"
+		texturefile = "gfx/interface/goals/GFX_focus_IKA_we_shall_not_fear.dds"
+	}
+}

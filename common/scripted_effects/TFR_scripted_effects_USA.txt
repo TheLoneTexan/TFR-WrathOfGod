@@ -2761,15 +2761,16 @@ USA_civil_war_outbreak_effect = {
 		transfer_state = 364
 		load_oob = "IKA_2020"
 		new_country = yes
-			if = {
-			limit = {
-				has_global_flag = play_IKA_global
-			}
-			IKA = {
-				change_tag_from = USA
-			}
-			clr_global_flag = play_IKA_global
+	}
+	# WoG: player tag switch to the Army of God, moved out of the IKA = { } spawn block so it mirrors the PTF/NSM/ATW pattern
+	if = {
+		limit = {
+			has_global_flag = play_IKA_global
 		}
+		IKA = {
+			change_tag_from = USA
+		}
+		clr_global_flag = play_IKA_global
 	}
 	ALA = {
 		USA_civil_war_faction = yes
